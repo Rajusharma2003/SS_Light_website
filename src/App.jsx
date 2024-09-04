@@ -3,18 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 // import Navbar from './Components/Navbar/Navbar';
 import Navbar from './Components/Navbar/Nabar';
+import AboutPage from './Components/Pages/AboutPage';
+import Fans from './Components/Pages/Fans';
+import Heaters from './Components/Pages/Heaters';
+import TableFans from './Components/Pages/TableFans';
+import Farata from './Components/Pages/Farata';
+import Contact from './Components/Pages/Contact';
+import { Download } from '@mui/icons-material';
 import HomePage from './HomePage/HomePage';
 
-// Import other components for your routes
-// import AboutPage from './Components/AboutPage';
-// import ProductsPage from './Components/ProductsPage';
-// import FeaturesPage from './Components/FeaturesPage';
-// import HowToUsePage from './Components/HowToUsePage';
-// import TestimonialPage from './Components/TestimonialPage';
-// import BlogPage from './Components/BlogPage';
-// import NotFoundPage from './Components/NotFoundPage';
-// import ContactPage from './Components/ContactPage';
-// import ShopPage from './Components/ShopPage';
 
 function App() {
   return (
@@ -22,17 +19,13 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/about" element={<AboutPage />} />
-        <Route path="/products" element={<ProductsPage />} />
-        <Route path="/feature" element={<FeaturesPage />} />
-        <Route path="/how-to-use" element={<HowToUsePage />} />
-        <Route path="/testimonial" element={<TestimonialPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/404" element={<NotFoundPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/shop" element={<ShopPage />} />
-        {/* Add a catch-all route for undefined paths */}
-        {/* <Route path="*" element={<NotFoundPage />} /> */} 
+         <Route path="/company" element={<AboutPage />} />
+        <Route path="/fans" element={<Fans />} />
+        <Route path="/heaters" element={<Heaters />} />
+        <Route path="/tableFans" element={<TableFans />} />
+        <Route path="/farata" element={<Farata />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/download" element={<Download />} />
       </Routes>
     </Router>
   );
