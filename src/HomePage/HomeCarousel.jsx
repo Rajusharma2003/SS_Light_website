@@ -25,11 +25,15 @@ const HomeCarousel = () => (
       disableButtonsControls
       autoPlay
       autoPlayInterval={2000}
-      
+      responsive={{
+        0: { items: 1 },
+        768: { items: 1 }, // Adjust items per view for tablets
+        1024: { items: 1 } // Adjust items per view for desktops
+      }}
     >
       {carouselData.map((item, index) => (
         <div key={index} className="item">
-          <img src={item.image} alt={`Slide ${index}`} className="w-full h-[800px]" />
+          <img src={item.image} alt={`Slide ${index}`} className="w-full h-auto md:h-[600px] lg:h-[800px] object-cover" />
         </div>
       ))}
     </AliceCarousel>

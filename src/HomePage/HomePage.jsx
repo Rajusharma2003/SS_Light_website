@@ -23,15 +23,15 @@ const HomePage = () => {
     {/*Shop By Category section  */}
     <section className="p-6 bg-gray-100">
   <h2 className="text-2xl font-bold text-center mb-6">Shop By Category</h2>
-  <div className="flex flex-wrap justify-center items-center space-x-14 md:w-3/4 mx-auto">
+  <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
     <Link to="/heaters" className="flex flex-col items-center">
       <div className="transition-transform transform hover:scale-110 duration-300 ease-in-out">
         <img
           src="https://img.freepik.com/premium-photo/portable-heating-innovation_960080-25371.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
           alt="Heater"
-          className="w-[200px] h-[200px] rounded-full shadow-lg object-cover "
+          className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-full shadow-lg object-cover"
         />
-        <p className='text-center mt-2'>Heater</p>
+        <p className="text-center mt-2 text-sm md:text-base">Heater</p>
       </div>
     </Link>
     <Link to="/fans" className="flex flex-col items-center">
@@ -39,9 +39,9 @@ const HomePage = () => {
         <img
           src="https://img.freepik.com/premium-photo/living-room-with-couch-table-ceiling-fan_966002-68576.jpg?size=626&ext=jpg&ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
           alt="Fan"
-          className="w-[200px] h-auto rounded-full shadow-lg"
+          className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-full shadow-lg object-cover"
         />
-        <p className='text-center mt-2'>Fans</p>
+        <p className="text-center mt-2 text-sm md:text-base">Fans</p>
       </div>
     </Link>
     <Link to="/farata" className="flex flex-col items-center">
@@ -49,9 +49,9 @@ const HomePage = () => {
         <img
           src="https://img.freepik.com/premium-photo/black-electric-fan-three-dimensional-model-white-surface-fan-with-control-buttons-stand-simple-device-air-ventilation_101266-1430.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
           alt="Farata"
-          className="w-[200px] h-auto rounded-full shadow-lg"
+          className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-full shadow-lg object-cover"
         />
-        <p className='text-center mt-2'>Farata</p>
+        <p className="text-center mt-2 text-sm md:text-base">Farata</p>
       </div>
     </Link>
     <Link to="/table-fans" className="flex flex-col items-center">
@@ -59,13 +59,14 @@ const HomePage = () => {
         <img
           src="https://img.freepik.com/premium-photo/table-fan-closeup-cooling-room-hot-weather_76255-1976.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
           alt="Table Fan"
-          className="w-[200px] h-[200px] rounded-full shadow-lg object-fill"
+          className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-full shadow-lg object-cover"
         />
-        <p className='text-center mt-2'>Table Fans</p>
+        <p className="text-center mt-2 text-sm md:text-base">Table Fans</p>
       </div>
     </Link>
   </div>
 </section>
+
 
 
 
@@ -99,54 +100,55 @@ const HomePage = () => {
 
 
 
-{/* This is the product detail section  */}
+  {/* Ceiling Fans Section */}
+  <div
+  className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[500px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
+  style={{
+    backgroundImage: "url('https://www.ushafans.com/sites/default/files/ceiling-fans-bg.png')",
+  }}
+>
+  <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left">
+    <h1 className="text-2xl sm:text-4xl font-bold mb-4">CEILING FANS</h1>
+    <p className="text-sm sm:text-base">
+      A perfect mix of aesthetics and functionality, Usha Ceiling fans come
+      in various stylish designs, vibrant colours, and innovative technology
+      to perfectly complement both your lifestyle and interior décor.
+    </p>
+  </div>
+</div>
 
+  {/* Pedestal Fans Section */}
+  <div
+  className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-end mt-10 sm:mt-20"
+  style={{
+    backgroundImage: "url('https://www.ushafans.com/sites/default/files/Pedestal-banner.png')",
+  }}
+>
+  <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left sm:mr-20 mx-4">
+    <h1 className="text-2xl sm:text-4xl font-bold mb-4">PEDESTAL FANS</h1>
+    <p className="text-sm sm:text-lg">
+      Choose exactly how and where you want that fresh breeze of air, be it your verandah or inside your home.
+      Usha pedestal fans are equipped with height adjustment and easy tilting mechanism, to give comfort at all levels and spaces.
+    </p>
+  </div>
+</div>
+
+
+ {/* Table Fans Section */}
 <div
-      className="relative bg-cover bg-center h-[600px] flex items-center mt-20"
-      style={{
-        backgroundImage: "url('https://www.ushafans.com/sites/default/files/ceiling-fans-bg.png')",
-      }}
-    >
-      <div className="w-full max-w-xl p-8 bg-opacity-75 text-left ml-10">
-        <h1 className="text-4xl font-bold mb-4">CEILING FANS</h1>
-        <p className="text-lg  ">
-          A perfect mix of aesthetics and functionality, Usha Ceiling fans come
-          in various stylish designs, vibrant colours, and innovative technology
-          to perfectly complement both your lifestyle and interior décor.
-        </p>
-      </div>
-    </div>
-
-    <div
-      className="relative bg-cover bg-center h-[600px] flex items-center justify-end mt-20"
-      style={{
-        backgroundImage: "url('https://www.ushafans.com/sites/default/files/Pedestal-banner.png')",
-      }}
-    >
-      <div className="w-full max-w-xl p-8 bg-opacity-75 text-left mr-20">
-        <h1 className="text-4xl font-bold mb-4">Farata FANS</h1>
-        <p className="text-lg">
-        Choose exactly how and where you want that fresh breeze of air, be it your verandah or inside your home.
-         Usha pedestal fans are equipped with height adjustment and easy tilting mechanism, to give comfort at all levels and spaces.
-        </p>
-      </div>
-    </div>
-
-
-    <div
-      className="relative bg-cover bg-center h-[600px] flex items-center mt-20"
-      style={{
-        backgroundImage: "url('https://www.ushafans.com/sites/default/files/table-fan-bg.jpg')",
-      }}
-    >
-      <div className="w-full max-w-xl p-8 bg-opacity-75 text-left ml-10">
-        <h1 className="text-4xl font-bold mb-4">TABLE FANS</h1>
-        <p className="text-lg  ">
-        Your buddy for all places be it your study, kitchen or balcony! Compact and light weight Usha Table Fans sit comfortably on your desk or the floor to provide focused air anywhere. 
-        Designed for a great experience with easy tilting mechanism, you can adjust the air flow according to your needs.
-        </p>
-      </div>
-    </div>
+  className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
+  style={{
+    backgroundImage: "url('https://www.ushafans.com/sites/default/files/table-fan-bg.jpg')",
+  }}
+>
+  <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left">
+    <h1 className="text-2xl sm:text-4xl font-bold mb-4">TABLE FANS</h1>
+    <p className="text-sm sm:text-lg">
+      Your buddy for all places be it your study, kitchen or balcony! Compact and light weight Usha Table Fans sit comfortably on your desk or the floor to provide focused air anywhere.
+      Designed for a great experience with easy tilting mechanism, you can adjust the air flow according to your needs.
+    </p>
+  </div>
+</div>
 
 
 
@@ -167,44 +169,44 @@ const HomePage = () => {
 
       {/* news section  */}
       <section className="py-16 px-4">
-      <div className="max-w-7xl mx-auto text-center mb-12">
-        <h1 className="text-4xl font-bold">A Promise of Excellence</h1>
-      </div>
-      <div className="max-w-7xl mx-auto flex  justify-center gap-8">
-        <div className="flex flex-col items-center text-center w-1/2 md:w-1/4">
-          <img
-            src="https://img.freepik.com/premium-vector/65-years-services_926377-208.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
-            alt="Expertise"
-            className="w-40 h-50 mb-4 rounded-full"
-          />
-          <h2 className="text-xl font-bold">Expertise of 65+ years</h2>
-        </div>
-        <div className="flex flex-col items-center text-center w-1/2 md:w-1/4">
-          <img
-            src="https://img.freepik.com/free-vector/innovation-concept-with-lightbulb_23-2149155595.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
-            alt="Culture of Innovation & Design"
-            className="w-40 h-50 mb-4 rounded-full"
-          />
-          <h2 className="text-xl font-bold">Culture of Innovation & Design</h2>
-        </div>
-        <div className="flex flex-col items-center text-center w-1/2 md:w-1/4">
-          <img
-            src="https://img.freepik.com/free-vector/diaspora-abstract-concept-vector-illustration-jewish-diaspora-forced-movement-star-david-living-outside-ethnic-religious-group-jewish-communities-foreigners-group-abstract-metaphor_335657-3971.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
-            alt="Nationwide Presence"
-            className="w-40 h-50 mb-4 rounded-full"
-          />
-          <h2 className="text-xl font-bold">Nationwide Presence</h2>
-        </div>
-        <div className="flex flex-col items-center text-center w-1/2 md:w-1/4">
-          <img
-            src="https://img.freepik.com/premium-vector/man-gives-thumbs-up-gives-5-star-rating-illustration_987561-20.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
-            alt="Happy Customers"
-            className="w-40 h-50 mb-4 rounded-full"
-          />
-          <h2 className="text-xl font-bold">20+ Crore Happy Customers</h2>
-        </div>
-      </div>
-    </section>
+  <div className="max-w-7xl mx-auto text-center mb-12">
+    <h1 className="text-4xl font-bold">A Promise of Excellence</h1>
+  </div>
+  <div className="max-w-7xl mx-auto flex flex-wrap lg:flex-nowrap justify-center gap-8">
+    <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4">
+      <img
+        src="https://img.freepik.com/premium-vector/65-years-services_926377-208.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
+        alt="Expertise"
+        className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 mb-4 rounded-full object-cover"
+      />
+      <h2 className="text-base sm:text-lg md:text-xl font-bold">Expertise of 65+ years</h2>
+    </div>
+    <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4">
+      <img
+        src="https://img.freepik.com/free-vector/innovation-concept-with-lightbulb_23-2149155595.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
+        alt="Culture of Innovation & Design"
+        className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 mb-4 rounded-full object-cover"
+      />
+      <h2 className="text-base sm:text-lg md:text-xl font-bold">Culture of Innovation & Design</h2>
+    </div>
+    <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4">
+      <img
+        src="https://img.freepik.com/free-vector/diaspora-abstract-concept-vector-illustration-jewish-diaspora-forced-movement-star-david-living-outside-ethnic-religious-group-jewish-communities-foreigners-group-abstract-metaphor_335657-3971.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
+        alt="Nationwide Presence"
+        className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 mb-4 rounded-full object-cover"
+      />
+      <h2 className="text-base sm:text-lg md:text-xl font-bold">Nationwide Presence</h2>
+    </div>
+    <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4">
+      <img
+        src="https://img.freepik.com/premium-vector/man-gives-thumbs-up-gives-5-star-rating-illustration_987561-20.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
+        alt="Happy Customers"
+        className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 mb-4 rounded-full object-cover"
+      />
+      <h2 className="text-base sm:text-lg md:text-xl font-bold">20+ Crore Happy Customers</h2>
+    </div>
+  </div>
+</section>
 
 
     {/* we are Why Choose Us page  */}
