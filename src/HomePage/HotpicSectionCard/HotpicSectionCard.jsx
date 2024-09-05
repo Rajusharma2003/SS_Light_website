@@ -8,10 +8,7 @@ const HotPickSection = ({ image, description, rate }) => {
           <img className='object-fill w-full h-full' src={image} alt="Hot pick item" />
         </div>
         <div className="p-4 w-full">
-          <div className='flex items-center mb-2'>
-            <FaFire className='text-red-500 mr-2' />
-            <h2 className='text-xl font-bold text-gray-900'>Hot Picks</h2>
-          </div>
+          
           <h3 className='text-lg font-medium text-gray-900'>{description}</h3>
           <div className='flex items-center mt-2'>
             <p className='text-gray-500 text-xl'> MRP ₹{rate}</p>

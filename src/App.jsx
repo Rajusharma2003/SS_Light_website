@@ -25,7 +25,7 @@ function App() {
         <Route path="/tableFans" element={<TableFans />} />
         <Route path="/farata" element={<Farata />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/download" element={<Download />} />
+        {/* <Route path="/download" element={<Download />} /> */}
       </Routes>
     </Router>
   );

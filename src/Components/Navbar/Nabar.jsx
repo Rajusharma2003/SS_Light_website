@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import { FaHome, FaList, FaInfoCircle, FaPhoneAlt, FaDownload } from 'react-icons/fa';
 import { AiOutlineDown, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+
 import logo from '../../Images/SsLogo.png';
+import ssLightsPdf from '../../Images/a1.pdf';
+
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState({ products: false, about: false });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownTimers, setDropdownTimers] = useState({ products: null, about: null });
+  const [searchTerm, setSearchTerm] = useState('');
 
   const handleDropdownToggle = (section) => {
     setDropdownOpen((prevState) => ({
@@ -32,7 +36,7 @@ const Navbar = () => {
         ...prevState,
         [section]: false,
       }));
-    }, 300); // Adjust delay as needed
+    }, 300);
     setDropdownTimers((prevState) => ({
       ...prevState,
       [section]: timer,
@@ -41,6 +45,15 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    console.log('Search term:', searchTerm); // Handle search functionality here
   };
 
   return (
@@ -55,14 +68,16 @@ const Navbar = () => {
         </div>
 
         {/* Logo */}
-        <img src={logo} alt="logoimg" className="h-12 w-24 md:h-16 md:w-28 mx-auto md:mx-0" />
+        <img src={logo} alt="logoimg" className="h-12 w-24 md:h-20 md:w-32 mx-auto md:mx-0" />
+
+        
 
         {/* Navbar Links for Desktop */}
         <ul className={`hidden md:flex md:space-x-6`}>
           <li>
             <Link
               to="/"
-              className="flex items-center space-x-2 px-4 py-2 hover:bg-[#90bc79] hover:text-white font-bold rounded-md transition-transform transform hover:scale-110 duration-300 ease-in-out text-sm md:text-base"
+              className="flex items-center space-x-2 px-4 py-2 hover:bg-[#74c056] hover:text-white font-bold rounded-md transition-transform transform hover:scale-110 duration-300 ease-in-out text-sm md:text-base"
             >
               <FaHome />
               <span>Home</span>
@@ -73,7 +88,7 @@ const Navbar = () => {
             onMouseEnter={() => handleMouseEnter('products')}
             onMouseLeave={() => handleMouseLeave('products')}
           >
-            <div className="flex items-center space-x-2 px-4 py-2 hover:bg-[#90bc79] hover:text-white cursor-pointer font-bold rounded-md transition-transform transform hover:scale-110 duration-300 ease-in-out text-sm md:text-base">
+            <div className="flex items-center space-x-2 px-4 py-2 hover:bg-[#74c056] hover:text-white cursor-pointer font-bold rounded-md transition-transform transform hover:scale-110 duration-300 ease-in-out text-sm md:text-base">
               <FaList />
               <span>Products</span>
               <AiOutlineDown />
@@ -94,7 +109,7 @@ const Navbar = () => {
             onMouseEnter={() => handleMouseEnter('about')}
             onMouseLeave={() => handleMouseLeave('about')}
           >
-            <div className="flex items-center space-x-2 px-4 py-2 hover:bg-[#90bc79] hover:text-white cursor-pointer font-bold rounded-md transition-transform transform hover:scale-110 duration-300 ease-in-out text-sm md:text-base">
+            <div className="flex items-center space-x-2 px-4 py-2 hover:bg-[#74c056] hover:text-white cursor-pointer font-bold rounded-md transition-transform transform hover:scale-110 duration-300 ease-in-out text-sm md:text-base">
               <FaInfoCircle />
               <span>About</span>
               <AiOutlineDown />
@@ -110,22 +125,37 @@ const Navbar = () => {
           <li>
             <Link
               to="/contact"
-              className="flex items-center space-x-2 px-4 py-2 hover:bg-[#90bc79] hover:text-white duration-300 cursor-pointer font-bold rounded-md transition-transform transform hover:scale-110 ease-in-out text-sm md:text-base"
+              className="flex items-center space-x-2 px-4 py-2 hover:bg-[#74c056] hover:text-white duration-300 cursor-pointer font-bold rounded-md transition-transform transform hover:scale-110 ease-in-out text-sm md:text-base"
             >
               <FaPhoneAlt />
               <span>Contact</span>
             </Link>
           </li>
           <li>
-            <Link
-              to="/download"
-              className="flex items-center space-x-2 px-4 py-2 hover:bg-[#90bc79] hover:text-white duration-300 cursor-pointer font-bold rounded-md transition-transform transform hover:scale-110 ease-in-out text-sm md:text-base"
-            >
-              <FaDownload />
-              <span>Download</span>
-            </Link>
-          </li>
+          <a
+            href={ssLightsPdf}
+            className="flex items-center space-x-2 px-4 py-2 hover:bg-[#74c056] hover:text-white duration-300 cursor-pointer font-bold rounded-md transition-transform transform hover:scale-110 ease-in-out text-sm md:text-base"
+          >
+            <FaDownload />
+            <span>Download</span>
+          </a>
+        </li>
+
         </ul>
+
+        {/* Search Bar */}
+        <form onSubmit={handleSearchSubmit} className="flex items-center mx-auto md:mx-0 ">
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={handleSearchChange}
+            className="border border-gray-300 rounded-md p-2 text-sm md:text-base md:w-[300px] focus:outline-none focus:ring-2 focus:ring-[#90bc79]"
+            placeholder="Search..."
+          />
+          <button type="submit" className="bg-[#74c056] text-white p-2 ml-2 rounded-md hover:bg-[#74c056] transition duration-300 ease-in-out">
+            Search
+          </button>
+        </form>
 
         {/* Mobile Menu Links */}
         <ul className={`md:hidden ${mobileMenuOpen ? 'flex flex-col space-y-4' : 'hidden'} absolute top-full left-0 w-full bg-white border-t border-gray-200 mt-2`}>
@@ -178,7 +208,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/contact"
-              className="flex items-center space-x-2 px-4 py-2 hover:bg-[#90bc79] hover:text-white duration-300 cursor-pointer font-bold rounded-md transition-transform transform hover:scale-110 text-sm"
+              className="flex items-center space-x-2 px-4 py-2 hover:bg-[#90bc79] hover:text-white duration-300 cursor-pointer font-bold rounded-md transition-transform transform hover:scale-110 ease-in-out text-sm"
             >
               <FaPhoneAlt />
               <span>Contact</span>
@@ -186,8 +216,8 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/download"
-              className="flex items-center space-x-2 px-4 py-2 hover:bg-[#90bc79] hover:text-white duration-300 cursor-pointer font-bold rounded-md transition-transform transform hover:scale-110 text-sm"
+              to={ssLightsPdf}
+              className="flex items-center space-x-2 px-4 py-2 hover:bg-[#90bc79] hover:text-white duration-300 cursor-pointer font-bold rounded-md transition-transform transform hover:scale-110 ease-in-out text-sm"
             >
               <FaDownload />
               <span>Download</span>
