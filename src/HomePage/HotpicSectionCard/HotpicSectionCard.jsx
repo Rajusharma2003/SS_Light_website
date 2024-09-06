@@ -5,7 +5,7 @@ const HotPickSection = ({ image, description, rate }) => {
 
       <div className='cursor-pointer flex flex-col items-center bg-white rounded-lg shadow-lg overflow-hidden mx-6 md:mx-12 lg:mx-28 w-80 md:w-96'>
         <div className="h-[400px] w-full">
-          <img className='object-fill w-full h-full' src={image} alt="Hot pick item" />
+          <img className='object-cover w-full h-full' src={image} alt="Hot pick item" />
         </div>
         <div className="p-4 w-full">
           

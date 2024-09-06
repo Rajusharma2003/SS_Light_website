@@ -9,7 +9,6 @@ import Heaters from './Components/Pages/Heaters';
 import TableFans from './Components/Pages/TableFans';
 import Farata from './Components/Pages/Farata';
 import Contact from './Components/Pages/Contact';
-import { Download } from '@mui/icons-material';
 import HomePage from './HomePage/HomePage';
 
 
@@ -25,7 +24,6 @@ function App() {
         <Route path="/tableFans" element={<TableFans />} />
         <Route path="/farata" element={<Farata />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/download" element={<Download />} /> */}
       </Routes>
     </Router>
   );

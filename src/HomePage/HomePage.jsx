@@ -1,15 +1,10 @@
 import React from 'react';
 import HomeCarousel from './HomeCarousel'
 import { FaLeaf, FaRecycle, FaLightbulb, FaCogs, FaLinkedinIn, FaArrowUp, FaWhatsapp , } from 'react-icons/fa';
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 import { Link } from 'react-router-dom';  
 import HotPicSectionDetails from './HotPicSectionDetails/HotPicSectionDetails';
 import Footer from '../Components/Pages/Footer';
-
-
-
-
 
 
 const HomePage = () => {
@@ -20,9 +15,9 @@ const HomePage = () => {
     {/* This is carousel section  */}
       <HomeCarousel/>
 
-    {/*Shop By Category section  */}
-    <section className="p-6 bg-gray-100 mt-10">
-  <h2 className="text-2xl font-bold text-center mb-6">Shop By Category</h2>
+      {/*Shop By Category section  */}
+      <section className="p-6 bg-gray-100 mt-10">
+  <h2 className="text-3xl font-bold text-center mb-10">Shop By Category</h2>
   <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
     <Link to="/heaters" className="flex flex-col items-center">
       <div className="transition-transform transform hover:scale-110 duration-300 ease-in-out">
@@ -68,85 +63,87 @@ const HomePage = () => {
 </section>
 
 
-{/* This is the about section  */}
-<div className="flex flex-col md:flex-row items-center justify-center p-4 w-full mt-10 ">
-  {/* Image */}
-  <div className="md:w-1/3 flex justify-center">
-    <img
-      src="https://img.freepik.com/premium-photo/living-room-with-couch-coffee-table-ceiling-fan_954226-421726.jpg?size=626&ext=jpg&ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
-      alt="Living Room with Ceiling Fan"
-      className="w-full max-w-[500px] h-auto object-fill rounded-lg"
-    />
+
+  {/* This is the about section  */}
+  <div className="flex flex-col md:flex-row items-center justify-center p-4 w-full mt-10 ">
+    {/* Image */}
+    <div className="md:w-1/3 flex justify-center">
+      <img
+        src="https://img.freepik.com/premium-photo/living-room-with-couch-coffee-table-ceiling-fan_954226-421726.jpg?size=626&ext=jpg&ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
+        alt="Living Room with Ceiling Fan"
+        className="w-full max-w-[500px] h-auto object-fill rounded-lg"
+      />
+    </div>
+    
+    {/* Description */}
+    <div className="md:w-1/2 p-2 flex items-center">
+      <div>
+        <h1 className="text-3xl mb-4 text-center md:text-left font-bold text-[#74c056] border-b-2">Welcome to SSLignt.
+        {/* <span className='absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[30%] border-b-2 border-black'></span> */}
+          </h1>
+        <p className="text-gray-700 text-center md:text-left text-lg">
+          <span className='text-2xl font-semibold'>SSLignt is a leader in crafting innovative fans that redefine comfort in every space. </span> 
+          Our commitment to excellence shines through in every product we offer, from sleek ceiling fans to powerful wall and table fans. 
+          With advanced engineering and stylish designs, SSLignt fans ensure both efficiency and elegance in your home. 
+          Whether you're looking for a fan to keep your living room cool or a powerful option for industrial use, 
+          SSLignt has the perfect solution to meet your needs.
+        </p>
+      </div>
+    </div>
   </div>
-  
-  {/* Description */}
-  <div className="md:w-1/2 p-2 flex items-center">
-    <div>
-      <h1 className="text-3xl mb-4 text-center md:text-left font-bold text-[#74c056] border-b-2">Welcome to SSLignt.</h1>
-      <p className="text-gray-700 text-center md:text-left text-lg">
-        <span className='text-2xl font-semibold'>SSLignt is a leader in crafting innovative fans that redefine comfort in every space. </span> 
-        Our commitment to excellence shines through in every product we offer, from sleek ceiling fans to powerful wall and table fans. 
-        With advanced engineering and stylish designs, SSLignt fans ensure both efficiency and elegance in your home. 
-        Whether you're looking for a fan to keep your living room cool or a powerful option for industrial use, 
-        SSLignt has the perfect solution to meet your needs.
+
+
+    {/* Ceiling Fans Section */}
+    <div
+    className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[500px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
+    style={{
+      backgroundImage: "url('https://www.ushafans.com/sites/default/files/ceiling-fans-bg.png')",
+    }}
+  >
+    <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left">
+      <h1 className="text-2xl sm:text-4xl font-bold mb-4">CEILING FANS</h1>
+      <p className="text-sm sm:text-lg">
+      SSLignt ceiling fans combine aesthetics and functionality, featuring stylish designs, 
+      bold colors, and advanced technology to perfectly match your lifestyle and home décor.
       </p>
     </div>
   </div>
-</div>
 
-
-  {/* Ceiling Fans Section */}
-  <div
-  className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[500px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
-  style={{
-    backgroundImage: "url('https://www.ushafans.com/sites/default/files/ceiling-fans-bg.png')",
-  }}
->
-  <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left">
-    <h1 className="text-2xl sm:text-4xl font-bold mb-4">CEILING FANS</h1>
-    <p className="text-sm sm:text-base">
-    SSLignt ceiling fans combine aesthetics and functionality, featuring stylish designs, 
-    bold colors, and advanced technology to perfectly match your lifestyle and home décor.
-    </p>
+    {/* Pedestal Fans Section */}
+    <div
+    className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-end mt-10 sm:mt-20"
+    style={{
+      backgroundImage: "url('https://www.ushafans.com/sites/default/files/Pedestal-banner.png')",
+    }}
+  >
+    <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left sm:mr-20 mx-4">
+      <h1 className="text-2xl sm:text-4xl font-bold mb-4">PEDESTAL FANS</h1>
+      <p className="text-sm sm:text-lg">
+      With SSLignt pedestal fans, you have full control over how and where you enjoy a refreshing breeze,
+      whether it's on your patio or indoors. These fans offer adjustable height and an easy tilting mechanism, 
+      ensuring comfort in any space and at every level.
+      </p>
+    </div>
   </div>
-</div>
-
-  {/* Pedestal Fans Section */}
-  <div
-  className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-end mt-10 sm:mt-20"
-  style={{
-    backgroundImage: "url('https://www.ushafans.com/sites/default/files/Pedestal-banner.png')",
-  }}
->
-  <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left sm:mr-20 mx-4">
-    <h1 className="text-2xl sm:text-4xl font-bold mb-4">PEDESTAL FANS</h1>
-    <p className="text-sm sm:text-lg">
-    With SSLignt pedestal fans, you have full control over how and where you enjoy a refreshing breeze,
-    whether it's on your patio or indoors. These fans offer adjustable height and an easy tilting mechanism, 
-    ensuring comfort in any space and at every level.
-    </p>
-  </div>
-</div>
 
 
- {/* Table Fans Section */}
-<div
-  className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
-  style={{
-    backgroundImage: "url('https://www.ushafans.com/sites/default/files/table-fan-bg.jpg')",
-  }}
->
-  <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left">
-    <h1 className="text-2xl sm:text-4xl font-bold mb-4">TABLE FANS</h1>
-    <p className="text-sm sm:text-lg">
-    Your perfect companion for any spot, whether it's your study, kitchen,
-    or balcony! SSLignt table fans are compact and lightweight,
-    easily fitting on your desk or floor to deliver targeted airflow wherever needed. With an easy tilting mechanism,
-     you can effortlessly adjust the air direction to suit your comfort.
-    </p>
-  </div>
-</div>
-
+    {/* Table Fans Section */}
+    <div
+      className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
+      style={{
+        backgroundImage: "url('https://www.ushafans.com/sites/default/files/table-fan-bg.jpg')",
+      }}
+    >
+      <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left">
+        <h1 className="text-2xl sm:text-4xl font-bold mb-4">TABLE FANS</h1>
+        <p className="text-sm sm:text-lg">
+        Your perfect companion for any spot, whether it's your study, kitchen,
+        or balcony! SSLignt table fans are compact and lightweight,
+        easily fitting on your desk or floor to deliver targeted airflow wherever needed. With an easy tilting mechanism,
+        you can effortlessly adjust the air direction to suit your comfort.
+        </p>
+      </div>
+    </div>
 
 
      {/* This is hot pic section */}
@@ -155,11 +152,10 @@ const HomePage = () => {
         <FaLightbulb className='text-yellow-500 text-4xl mr-3 glow-effect' />
         Hot Pick Section
         {/* Underline effect */}
-        <span className='absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] border-b-2 border-black'></span>
+        {/* <span className='absolute top-11 left-1/2 transform -translate-x-1/2 w-[30%] border-b-2 border-black'></span> */}
       </h1>
       <HotPicSectionDetails />
     </div>
-
 
 
     {/* news section  */}
@@ -168,7 +164,7 @@ const HomePage = () => {
           <h1 className="text-4xl font-bold">A Promise of Excellence</h1>
         </div>
         <div className="max-w-7xl mx-auto flex flex-wrap lg:flex-nowrap justify-center gap-8">
-          <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4">
+          <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4 transition-transform transform hover:scale-110 duration-300 ease-in-out" >
             <img
               src="https://img.freepik.com/premium-vector/65-years-services_926377-208.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
               alt="Expertise"
@@ -176,7 +172,7 @@ const HomePage = () => {
             />
             <h2 className="text-base sm:text-lg md:text-xl font-bold">Expertise of 65+ years</h2>
           </div>
-          <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4">
+          <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4 transition-transform transform hover:scale-110 duration-300 ease-in-out">
             <img
               src="https://img.freepik.com/free-vector/innovation-concept-with-lightbulb_23-2149155595.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
               alt="Culture of Innovation & Design"
@@ -184,7 +180,7 @@ const HomePage = () => {
             />
             <h2 className="text-base sm:text-lg md:text-xl font-bold">Culture of Innovation & Design</h2>
           </div>
-          <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4">
+          <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4 transition-transform transform hover:scale-110 duration-300 ease-in-out">
             <img
               src="https://img.freepik.com/free-vector/diaspora-abstract-concept-vector-illustration-jewish-diaspora-forced-movement-star-david-living-outside-ethnic-religious-group-jewish-communities-foreigners-group-abstract-metaphor_335657-3971.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
               alt="Nationwide Presence"
@@ -192,7 +188,7 @@ const HomePage = () => {
             />
             <h2 className="text-base sm:text-lg md:text-xl font-bold">Nationwide Presence</h2>
           </div>
-          <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4">
+          <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4 transition-transform transform hover:scale-110 duration-300 ease-in-out">
             <img
               src="https://img.freepik.com/premium-vector/man-gives-thumbs-up-gives-5-star-rating-illustration_987561-20.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
               alt="Happy Customers"
@@ -209,7 +205,7 @@ const HomePage = () => {
           {/* We Offer / Why Choose Us */}
           <div className="flex flex-col items-center mb-12">
             <div className="text-center mb-8">
-              <h1 className="text-3xl font-bold mb-2 border-b-2">Why Choose Us</h1>
+              <h1 className="text-4xl font-bold mb-8 border-b-2">Why Choose Us</h1>
             </div>
             {/* Image and Description in Row */}
             <div className="flex flex-col md:flex-row items-center justify-center mb-12 ">
@@ -224,7 +220,7 @@ const HomePage = () => {
               <div className="w-full md:w-1/2 p-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="flex flex-col items-center justify-center space-y-2 shadow-md p-2 rounded-lg">
-                    <div className="text-green-500 text-4xl">
+                    <div className="text-green-500 text-5xl">
                       <FaLeaf />
                     </div>
                     <div className="text-center">
@@ -234,7 +230,7 @@ const HomePage = () => {
                   </div>
 
                   <div className="flex flex-col items-center justify-center space-y-2 shadow-md p-2 rounded-lg">
-                    <div className="text-green-500 text-4xl">
+                    <div className="text-green-500 text-5xl">
                       <FaRecycle />
                     </div>
                     <div className="text-center">
@@ -243,7 +239,7 @@ const HomePage = () => {
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center space-y-2 shadow-md p-2 rounded-lg">
-                    <div className="text-green-500 text-4xl">
+                    <div className="text-green-500 text-5xl">
                       <FaLightbulb />
                     </div>
                     <div className="text-center">
@@ -252,7 +248,7 @@ const HomePage = () => {
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center space-y-2 shadow-md p-2 rounded-lg">
-                    <div className="text-green-500 text-4xl">
+                    <div className="text-green-500 text-5xl">
                       <FaCogs />
                     </div>
                     <div className="text-center">
@@ -325,11 +321,10 @@ const HomePage = () => {
 </div>
 
 
-
    {/* This is the footer section  */}
+<div className='mt-20'>
    <Footer/>
-
-
+</div>
 
     </>
 

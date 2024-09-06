@@ -237,7 +237,7 @@ const Fans = () => {
         <FaLightbulb className='text-yellow-500 text-4xl mr-3 glow-effect' />
         Featured Fans
         {/* Underline effect */}
-        <span className='absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] border-b-2 border-black'></span>
+        <span className='absolute top-11 left-1/2 transform -translate-x-1/2 w-[20%] border-b-2 border-black'></span>
       </h1>
       <HotPicSectionDetails />
     </div>
@@ -246,27 +246,27 @@ const Fans = () => {
       <section className="py-16">
         <h2 className="text-center text-3xl font-semibold mb-20">
           Why To Choose SS Light Fans
-        </h2>
+        </h2> 
         <div className="flex flex-wrap justify-center gap-32">
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center transition-transform transform hover:scale-110 duration-300 ease-in-out">
             <img
-              src="https://cdn.accentuate.io/117605826864/-1684323365415/Sup-Air-Delv@4x-(1)-v1695626192388.png?6312x6312"
+              src="https://cdn-icons-png.flaticon.com/128/5507/5507932.png"
               alt="Superior Air Delivery"
               className="w-40 h-40 object-cover mb-4"
             />
             <p className="text-lg font-medium">Superior Air Delivery</p>
           </div>
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center transition-transform transform hover:scale-110 duration-300 ease-in-out">
             <img
-              src="https://cdn.accentuate.io/117605826864/-1684323365415/High-Speed@4x-v1695626196530.webp?350x355"
+              src="https://cdn-icons-png.flaticon.com/128/46/46182.png"
               alt="High Speed"
               className="w-40 h-40 object-cover mb-4"
             />
             <p className="text-lg font-medium">High Speed</p>
           </div>
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center transition-transform transform hover:scale-110 duration-300 ease-in-out">
             <img
-              src="https://cdn.accentuate.io/117605826864/-1684323365415/long-life--v1701667054703.png?350x350"
+              src="https://cdn-icons-png.flaticon.com/128/15183/15183286.png"
               alt="Long Life"
               className="w-40 h-40 object-cover mb-4"
             />
