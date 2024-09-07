@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HomeCarousel from './HomeCarousel'
 import { FaLeaf, FaRecycle, FaLightbulb, FaCogs, FaLinkedinIn, FaArrowUp, FaWhatsapp , } from 'react-icons/fa';
 
@@ -6,9 +6,24 @@ import { Link } from 'react-router-dom';
 import HotPicSectionDetails from './HotPicSectionDetails/HotPicSectionDetails';
 import Footer from '../Components/Pages/Footer';
 
+// this is for the animations.
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 const HomePage = () => {
+
+
+
+  useEffect(() => {
+    Aos.init();
+  } , [])
+
+
+
   return (
+
+
 
     <>
 
@@ -16,7 +31,8 @@ const HomePage = () => {
       <HomeCarousel/>
 
       {/*Shop By Category section  */}
-      <section className="p-6 bg-gray-100 mt-10">
+      <section className="p-6 bg-gray-100 mt-10"   data-aos="fade-up"
+     data-aos-duration="3000">
   <h2 className="text-3xl font-bold text-center mb-10">Shop By Category</h2>
   <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
     <Link to="/heaters" className="flex flex-col items-center">
@@ -67,7 +83,9 @@ const HomePage = () => {
   {/* This is the about section  */}
   <div className="flex flex-col md:flex-row items-center justify-center p-4 w-full mt-10 ">
     {/* Image */}
-    <div className="md:w-1/3 flex justify-center">
+    <div className="md:w-1/3 flex justify-center" data-aos="fade-right"
+     data-aos-offset="500"
+     data-aos-easing="ease-in-out">
       <img
         src="https://img.freepik.com/premium-photo/living-room-with-couch-coffee-table-ceiling-fan_954226-421726.jpg?size=626&ext=jpg&ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
         alt="Living Room with Ceiling Fan"
@@ -94,7 +112,8 @@ const HomePage = () => {
 
 
     {/* Ceiling Fans Section */}
-    <div
+    <div  data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"
     className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[500px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
     style={{
       backgroundImage: "url('https://www.ushafans.com/sites/default/files/ceiling-fans-bg.png')",
@@ -110,7 +129,8 @@ const HomePage = () => {
   </div>
 
     {/* Pedestal Fans Section */}
-    <div
+    <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"
     className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-end mt-10 sm:mt-20"
     style={{
       backgroundImage: "url('https://www.ushafans.com/sites/default/files/Pedestal-banner.png')",
@@ -128,7 +148,8 @@ const HomePage = () => {
 
 
     {/* Table Fans Section */}
-    <div
+    <div  data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"
       className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
       style={{
         backgroundImage: "url('https://www.ushafans.com/sites/default/files/table-fan-bg.jpg')",
@@ -209,7 +230,8 @@ const HomePage = () => {
             </div>
             {/* Image and Description in Row */}
             <div className="flex flex-col md:flex-row items-center justify-center mb-12 ">
-              <div className="w-full md:w-1/3 p-4">
+              <div className="w-full md:w-1/3 p-4" data-aos="fade-right"
+     data-aos-offset="500">
                 <img 
                   src="https://img.freepik.com/free-photo/portrait-modern-man-cleaning-doing-household-chores_23-2151468739.jpg?size=626&ext=jpg&ga=GA1.1.2025242279.1724825934&semt=ais_hybrid" 
                   alt="Modern Man Cleaning" 
@@ -263,7 +285,7 @@ const HomePage = () => {
         </div>
         
     {/* this is the map section  */}
-    <div className="w-4/5 mx-auto mt-20 flex flex-col md:flex-row gap-8">
+    <div className="w-4/5 mx-auto mt-20 flex flex-col md:flex-row gap-8" data-aos="fade-up">
   {/* Contact Form */}
   <div className="md:w-1/2 w-full bg-gray-100 p-6 rounded-lg shadow-lg">
     <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
@@ -305,7 +327,7 @@ const HomePage = () => {
   </div>
 
   {/* Google Map */}
-  <div className="md:w-1/2 w-full">
+  <div className="md:w-1/2 w-full" >
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13986.602115967915!2d77.056316!3d28.789682!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d078a2bdc5f87%3A0xa2c1249aea3a654a!2sS%20S%20Lights%20Innovative!5e0!3m2!1sen!2sin!4v1725441051332!5m2!1sen!2sin"
       width="100%"

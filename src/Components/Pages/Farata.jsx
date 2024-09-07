@@ -3,11 +3,18 @@ import Footer from "./Footer";
 import HotPicSectionDetails from "../../HomePage/HotPicSectionDetails/HotPicSectionDetails";
 import { FaLightbulb } from "react-icons/fa";
 
+// import farata imgae 
+import farata1 from '../../Images/Farata1.png'
+import farata2 from '../../Images/farata2.png'
+import farata3 from '../../Images/farata3.png'
+import farata4 from '../../Images/farata4.png'
+
 const Farata = () => {
   return (
 
     <>
     
+    {/* This is main image section */}
        <div>
         <img
             src="https://img.freepik.com/premium-photo/sophisticated-black-white-fan-with-sleek-base-white-backdrop-generative-ai_1219269-2302.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
@@ -16,7 +23,8 @@ const Farata = () => {
           />
         </div>
 
-
+ 
+        {/* This is heading section  */}
         <div className="mt-10">
         {/* Main Heading */}
         <h1 className="text-3xl font-bold mb-4 text-center">
@@ -24,7 +32,7 @@ const Farata = () => {
         </h1>
 
         {/* Sub Heading */}
-        <p className="text-base sm:text-xl text-center mb-6 sm:mb-11 mt-4 sm:mt-7">
+        <p className="text-base sm:text-lg text-center mb-6 sm:mb-11 mt-4 sm:mt-7">
           SSLignt offers a wide range of fans that merge innovative technology
           with elegant design to suit every taste and requirement. Revel in the
           quiet performance of our noiseless fans, <br className="hidden sm:block" />
@@ -54,67 +62,6 @@ const Farata = () => {
     </div>
   </div>
 
-      {/* This is the first product details section   */}
-      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
-        {/* Image and Description Section */}
-        <div className="flex flex-col lg:flex-row justify-center gap-8">
-          {/* First Item - Ceiling Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
-                alt="Ceiling Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
-              </p>
-              <button
-                className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
-                onClick={() => window.open('https://wa.me/8178196053', '_blank')}
-              >
-                Inquiry
-              </button>
-
-            </div>
-          </div>
-
-          {/* Second Item - Exhaust Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
-                alt="Exhaust Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
-              </p>
-              <button
-                className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
-                onClick={() => window.open('https://wa.me/8178196053', '_blank')}
-              >
-                Inquiry
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* This is second product details section */}
       <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
@@ -124,7 +71,7 @@ const Farata = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={farata1}
                 alt="Ceiling Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />
@@ -152,7 +99,7 @@ const Farata = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={farata1}
                 alt="Exhaust Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />
@@ -186,7 +133,7 @@ const Farata = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={farata2}
                 alt="Ceiling Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />
@@ -211,7 +158,61 @@ const Farata = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={farata3}
+                alt="Exhaust Fan"
+                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
+              />
+            </div>
+            <div className="w-full lg:w-1/2 p-6">
+              <p className="text-lg mb-4">
+                <strong className="text-xl">Ceiling Fans</strong>
+                <br />
+                Elevate your home's air quality with Crompton's exhaust fans.
+                They're not just a breath of fresh air; they're a commitment to
+                year-round well-being. Our exhaust fans eliminate stale odours,
+                ensuring your home remains fresh and healthy.
+              </p>
+              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
+                Inquiry
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* This is forth product details section */}
+      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
+        {/* Image and Description Section */}
+        <div className="flex flex-col lg:flex-row justify-center gap-8">
+          {/* First Item - Ceiling Fans */}
+          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="w-full lg:w-1/2">
+              <img
+                src={farata4}
+                alt="Ceiling Fan"
+                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
+              />
+            </div>
+            <div className="w-full lg:w-1/2 p-6">
+              <p className="text-lg mb-4">
+                <strong className="text-xl">Ceiling Fans</strong>
+                <br />
+                Step into the world of Crompton's premium ceiling fans, where
+                comfort knows no season. In India's ever-changing weather, a
+                ceiling fan is not just an appliance; it's a necessity. Discover
+                our wide range of energy-efficient fans, designed to combat
+                heat, dust, and humidity.
+              </p>
+              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
+                Inquiry
+              </button>
+            </div>
+          </div>
+
+          {/* Second Item - Exhaust Fans */}
+          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="w-full lg:w-1/2">
+              <img
+                src={farata4}
                 alt="Exhaust Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />

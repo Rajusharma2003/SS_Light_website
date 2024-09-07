@@ -3,9 +3,21 @@ import Footer from "./Footer";
 import HotPicSectionDetails from "../../HomePage/HotPicSectionDetails/HotPicSectionDetails";
 import { FaLightbulb } from "react-icons/fa";
 
+// This is Tablefan image
+import TableFan1 from "../../Images/TableFan1.png"
+import TableFan2 from "../../Images/TableFan2.png"
+import TableFan3 from "../../Images/TableFan3.png"
+import TableFan4 from "../../Images/TableFan4.png"
+import TableFan5 from "../../Images/TableFan5.png"
+import TableFan6 from "../../Images/TableFan6.png"
+import TableFan7 from "../../Images/TableFan7.png"
+import TableFan8 from "../../Images/TableFan8.png"
+
 const TableFans = () => {
   return (
     <>
+
+    {/* This is the main image section  */}
       <div>
          <img 
             src="https://www.crompton.co.in/cdn/shop/collections/Fan_KV2.webp?v=1695040351&width=1920"
@@ -34,7 +46,7 @@ const TableFans = () => {
 
       </div>
 
-         {/* Table Fans Section */}
+         {/* Table Fans image Section */}
     <div
       className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
       style={{
@@ -60,7 +72,7 @@ const TableFans = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={TableFan1}
                 alt="Ceiling Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />
@@ -89,7 +101,7 @@ const TableFans = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={TableFan2}
                 alt="Exhaust Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />
@@ -122,7 +134,7 @@ const TableFans = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={TableFan3}
                 alt="Ceiling Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />
@@ -150,7 +162,7 @@ const TableFans = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={TableFan4}
                 alt="Exhaust Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />
@@ -184,7 +196,7 @@ const TableFans = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={TableFan5}
                 alt="Ceiling Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />
@@ -209,7 +221,61 @@ const TableFans = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={TableFan6}
+                alt="Exhaust Fan"
+                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
+              />
+            </div>
+            <div className="w-full lg:w-1/2 p-6">
+              <p className="text-lg mb-4">
+                <strong className="text-xl">Ceiling Fans</strong>
+                <br />
+                Elevate your home's air quality with Crompton's exhaust fans.
+                They're not just a breath of fresh air; they're a commitment to
+                year-round well-being. Our exhaust fans eliminate stale odours,
+                ensuring your home remains fresh and healthy.
+              </p>
+              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
+                Inquiry
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* This is fourth product details section */}
+      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
+        {/* Image and Description Section */}
+        <div className="flex flex-col lg:flex-row justify-center gap-8">
+          {/* First Item - Ceiling Fans */}
+          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="w-full lg:w-1/2">
+              <img
+                src={TableFan7}
+                alt="Ceiling Fan"
+                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
+              />
+            </div>
+            <div className="w-full lg:w-1/2 p-6">
+              <p className="text-lg mb-4">
+                <strong className="text-xl">Ceiling Fans</strong>
+                <br />
+                Step into the world of Crompton's premium ceiling fans, where
+                comfort knows no season. In India's ever-changing weather, a
+                ceiling fan is not just an appliance; it's a necessity. Discover
+                our wide range of energy-efficient fans, designed to combat
+                heat, dust, and humidity.
+              </p>
+              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
+                Inquiry
+              </button>
+            </div>
+          </div>
+
+          {/* Second Item - Exhaust Fans */}
+          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="w-full lg:w-1/2">
+              <img
+                src={TableFan8}
                 alt="Exhaust Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />

@@ -3,13 +3,21 @@ import Footer from "./Footer";
 import HotPicSectionDetails from "../../HomePage/HotPicSectionDetails/HotPicSectionDetails";
 import { FaLightbulb } from "react-icons/fa";
 
+// import image here
+import Heater1 from '../../Images/heater1.jpeg'
+import Heater2 from '../../Images/heater2.png'
+import Heater3 from '../../Images/heater3.png'
+import Heater4 from '../../Images/heater4.png'
+import Heater5 from '../../Images/heater5.png'
+import Heater6 from '../../Images/heater6.png'
+
 const Heaters = () => {
   return (
     <>
 
-     
-    <div>
-       <img
+     {/* this is main image */}
+        <div>
+         <img
             src="https://img.freepik.com/premium-photo/cozy-living-room-with-modern-infrared-heater-creating-warm-atmosphere_932138-51107.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
             alt="Fan Category Banner"
             className="w-full h-full object-cover"
@@ -17,14 +25,14 @@ const Heaters = () => {
         </div>
 
 
-        <div className="mt-10">
         {/* Main Heading */}
+        <div className="mt-10">
         <h1 className="text-3xl font-bold mb-4 text-center">
           Add an Air of Sophistication to Your Home
         </h1>
 
         {/* Sub Heading */}
-        <p className="text-base sm:text-xl text-center mb-6 sm:mb-11 mt-4 sm:mt-7">
+        <p className="text-base sm:text-lg text-center mb-6 sm:mb-11 mt-4 sm:mt-7">
           SSLignt offers a wide range of fans that merge innovative technology
           with elegant design to suit every taste and requirement. Revel in the
           quiet performance of our noiseless fans, <br className="hidden sm:block" />
@@ -62,7 +70,7 @@ const Heaters = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={Heater1}
                 alt="Ceiling Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />
@@ -91,7 +99,7 @@ const Heaters = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={Heater2}
                 alt="Exhaust Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />
@@ -124,7 +132,7 @@ const Heaters = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={Heater3}
                 alt="Ceiling Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />
@@ -152,7 +160,7 @@ const Heaters = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={Heater4}
                 alt="Exhaust Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />
@@ -186,7 +194,7 @@ const Heaters = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={Heater5}
                 alt="Ceiling Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />
@@ -211,7 +219,7 @@ const Heaters = () => {
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
               <img
-                src="https://www.crompton.co.in/cdn/shop/files/Silent_pro_Blossom_smart_Denim_blue_1_angle_600x.png?v=1691062793"
+                src={Heater6}
                 alt="Exhaust Fan"
                 className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
               />

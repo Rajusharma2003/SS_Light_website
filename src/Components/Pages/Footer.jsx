@@ -55,7 +55,7 @@ const Footer = () => {
           <p className="mb-4">For any issues related to any products give us a call or connect with us here</p>
           <p className="mb-2">Call: <a href="tel:18004190505" className="hover:underline">+91 81781 96053</a></p>
           <p className="mb-4">Chat: <a href="https://wa.me/8178196053" className="hover:underline">WhatsApp no : +91 81781 96053</a></p>
-          <p className="mb-4">Address: Tower 3, 1st Floor, Equinox Business Park, Lal Bahadur Shastri Marg, Ambedkar Nagar, Kurla West, Kurla, Mumbai, Maharashtra 400070</p>
+          <p className="mb-4">Address: A 108, DSIIDC Industrial Area, Sector 4, Bawana, Delhi, 110039 </p>
           <h3 className="text-lg font-bold mb-4">Sign up for SS_Light updates</h3>
           <p className="mb-2">Subscribe to our newsletter for the latest updates, products, and insights</p>
           <input type="email" placeholder="Enter your email ID here" className="p-2 mb-4 w-full text-black" />

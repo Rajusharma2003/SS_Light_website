@@ -57,7 +57,7 @@ const HotPicSectionDetails = () => {
   };
 
   return (
-    <div className="relative px-4 lg:px-8 mx-auto ml-10 ">
+    <div className="relative px-4 lg:px-8 mx-auto ml-5 mr-5 ">
       <div className="flex items-center justify-center relative">
         <AliceCarousel
           ref={carouselRef}
@@ -70,7 +70,7 @@ const HotPicSectionDetails = () => {
           animationDuration={2000}
         />
 
-        <div className="absolute inset-y-0 left-0 flex items-center pl-2 ">
+        <div className="absolute inset-y-0 left-0 flex items-center  ">
           <button 
             onClick={slidePrev} 
             className="bg-gray-300 text-black p-2 rounded-full"
@@ -79,7 +79,7 @@ const HotPicSectionDetails = () => {
           </button>
         </div>
 
-        <div className="absolute inset-y-0 right-0 flex items-center pr-8">
+        <div className="absolute inset-y-0 right-0 flex items-center ">
           <button 
             onClick={slideNext} 
             className="bg-gray-300 text-black p-2 rounded-full"
