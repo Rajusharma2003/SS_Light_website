@@ -4,6 +4,10 @@ import CountUp from 'react-countup';
 import { FaChartPie, FaBuilding, FaGlobe, FaTruck, FaStore } from 'react-icons/fa';
 import Footer from './Footer';
 
+// import image.
+import banner2 from '../../Images/mainBanner2.jpeg'
+
+
 const AboutPage = () => {
 
 
@@ -44,7 +48,7 @@ const AboutPage = () => {
       {/* This is the main image section */}
       <div className="w-full h-full">
       <img
-        src="https://havells.com/media/wysiwyg/MicrosoftTeams-image_1_.png"
+        src={banner2}
         alt="Fan Category Banner"
         className="w-full h-full object-cover"
       />
@@ -52,7 +56,7 @@ const AboutPage = () => {
    
     {/* This is about section */}
       <section className="flex flex-col items-center justify-center text-center py-8 px-4">
-          <h1 className="text-3xl font-bold mb-10">ABOUT SSLIGHTS</h1>
+          <h1 className="text-4xl font-bold mb-10">ABOUT SSLIGHTS</h1>
           <p className="text-lg max-w-4xl">
             SSLights is a leading company in the manufacturing and sale of electrical goods, specializing in wires, cables, and fast-moving electrical goods (FMEG) under the 'SSLights' brand. In addition to wires and cables, SSLights produces and distributes FMEG products such as ceiling fans, LED lighting, switches, switchgear, solar solutions, and conduits & accessories.
             <br /><br />
@@ -78,7 +82,7 @@ const AboutPage = () => {
             <div key={index} className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md max-w-xs">
               <div className="mb-4">{item.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{item.label}</h3>
-              <CountUp start={0} end={item.value} duration={2.5} separator="," className="text-3xl font-bold text-gray-800" />
+              <CountUp start={0} end={item.value} duration={3} separator="," className="text-3xl font-bold text-gray-800" />
             </div>
           ))}
         </div>

@@ -8,6 +8,10 @@ import farata1 from '../../Images/Farata1.png'
 import farata2 from '../../Images/farata2.png'
 import farata3 from '../../Images/farata3.png'
 import farata4 from '../../Images/farata4.png'
+import banner2 from '../../Images/mainBanner2.jpeg'
+import FarataBanner from '../../Images/farataBanner.jpg'
+
+
 
 const Farata = () => {
   return (
@@ -17,12 +21,11 @@ const Farata = () => {
     {/* This is main image section */}
        <div>
         <img
-            src="https://img.freepik.com/premium-photo/sophisticated-black-white-fan-with-sleek-base-white-backdrop-generative-ai_1219269-2302.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
+            src={banner2}
             alt="Fan Category Banner"
             className="w-full h-full object-cover"
           />
         </div>
-
  
         {/* This is heading section  */}
         <div className="mt-10">
@@ -47,9 +50,9 @@ const Farata = () => {
       {/* this is the sub banner image  */}
      {/* Pedestal Fans Section */}
      <div
-      className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-end mt-10 sm:mt-20"
+      className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
        style={{
-         backgroundImage: "url('https://www.ushafans.com/sites/default/files/Pedestal-banner.png')",
+         backgroundImage: `url(${FarataBanner})`,
     }}
   >
     <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left sm:mr-20 mx-4">
@@ -78,13 +81,12 @@ const Farata = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Pedestal Fans</strong>
                 <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
+                Step into the world of SS Light's premium pedestal fans, where comfort is delivered with flexibility and power. 
+                In India's changing climate, a pedestal fan is not just an appliance; it's an essential addition to your home or office.
+                 Explore our range of energy-efficient pedestal fans, 
+                designed to combat heat, dust, and humidity while offering adjustable height and mobility for targeted cooling wherever you need it.
               </p>
               <button
                 className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
@@ -106,12 +108,12 @@ const Farata = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Pedestal Fans</strong>
                 <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
+                Step into the world of SS Light's premium pedestal fans, where comfort is delivered with flexibility and power. 
+                In India's changing climate, a pedestal fan is not just an appliance; it's an essential addition to your home or office.
+                 Explore our range of energy-efficient pedestal fans, 
+                designed to combat heat, dust, and humidity while offering adjustable height and mobility for targeted cooling wherever you need it.
               </p>
               
               <button
@@ -140,13 +142,12 @@ const Farata = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Pedestal Fans</strong>
                 <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
+                Step into the world of SS Light's premium pedestal fans, where comfort is delivered with flexibility and power. 
+                In India's changing climate, a pedestal fan is not just an appliance; it's an essential addition to your home or office.
+                 Explore our range of energy-efficient pedestal fans, 
+                designed to combat heat, dust, and humidity while offering adjustable height and mobility for targeted cooling wherever you need it.
               </p>
               <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
                 Inquiry
@@ -165,12 +166,12 @@ const Farata = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Pedestal Fans</strong>
                 <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
+                Step into the world of SS Light's premium pedestal fans, where comfort is delivered with flexibility and power. 
+                In India's changing climate, a pedestal fan is not just an appliance; it's an essential addition to your home or office.
+                 Explore our range of energy-efficient pedestal fans, 
+                designed to combat heat, dust, and humidity while offering adjustable height and mobility for targeted cooling wherever you need it.
               </p>
               <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
                 Inquiry
@@ -194,13 +195,12 @@ const Farata = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Pedestal Fans</strong>
                 <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
+                Step into the world of SS Light's premium pedestal fans, where comfort is delivered with flexibility and power. 
+                In India's changing climate, a pedestal fan is not just an appliance; it's an essential addition to your home or office.
+                 Explore our range of energy-efficient pedestal fans, 
+                designed to combat heat, dust, and humidity while offering adjustable height and mobility for targeted cooling wherever you need it.
               </p>
               <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
                 Inquiry
@@ -219,12 +219,12 @@ const Farata = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Pedestal Fans</strong>
                 <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
+                Step into the world of SS Light's premium pedestal fans, where comfort is delivered with flexibility and power. 
+                In India's changing climate, a pedestal fan is not just an appliance; it's an essential addition to your home or office.
+                 Explore our range of energy-efficient pedestal fans, 
+                designed to combat heat, dust, and humidity while offering adjustable height and mobility for targeted cooling wherever you need it.
               </p>
               <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
                 Inquiry
@@ -240,7 +240,7 @@ const Farata = () => {
         <FaLightbulb className='text-yellow-500 text-4xl mr-3 glow-effect' />
         Featured Fans
         {/* Underline effect */}
-        <span className='absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] border-b-2 border-black'></span>
+        <span className='absolute top-11 left-1/2 transform -translate-x-1/2 w-[20%] border-b-2 border-black'></span>
       </h1>
       <HotPicSectionDetails />
     </div>
@@ -279,10 +279,8 @@ const Farata = () => {
       </section>
 
       {/* This is the footer section  */}
-
-      <div>
         <Footer />
-      </div>
+    
     </>
   )
 }

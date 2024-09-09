@@ -1,4 +1,3 @@
-import { FaFire } from 'react-icons/fa'; // Import a flame icon from react-icons
 
 const HotPickSection = ({ image, description, rate }) => {
   return (

@@ -98,7 +98,7 @@ const Navbar = () => {
               <AiOutlineDown />
             </div>
             {dropdownOpen.products && (
-              <div className="absolute left-0 mt-2 w-40 md:w-48 lg:w-56 bg-gray-800 text-white border border-gray-700 rounded-md shadow-lg z-50">
+              <div className="absolute left-0 mt-2 w-40 md:w-48 lg:w-56   bg-gray-800 text-white border border-gray-700 rounded-md shadow-lg z-50">
                 <ul>
                   <li>
                     <Link

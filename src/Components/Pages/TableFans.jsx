@@ -12,6 +12,10 @@ import TableFan5 from "../../Images/TableFan5.png"
 import TableFan6 from "../../Images/TableFan6.png"
 import TableFan7 from "../../Images/TableFan7.png"
 import TableFan8 from "../../Images/TableFan8.png"
+import TableBanner from '../../Images/TableFanBanner.jpg'
+import banner2 from '../../Images/mainBanner2.jpeg'
+
+
 
 const TableFans = () => {
   return (
@@ -20,7 +24,7 @@ const TableFans = () => {
     {/* This is the main image section  */}
       <div>
          <img 
-            src="https://www.crompton.co.in/cdn/shop/collections/Fan_KV2.webp?v=1695040351&width=1920"
+            src={banner2}
             alt="Fan Category Banner"
             className="w-full h-full object-cover"
           />
@@ -48,9 +52,9 @@ const TableFans = () => {
 
          {/* Table Fans image Section */}
     <div
-      className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
+      className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-end mt-10 sm:mt-20"
       style={{
-        backgroundImage: "url('https://www.ushafans.com/sites/default/files/table-fan-bg.jpg')",
+        backgroundImage: `url(${TableBanner})`,
       }}
     >
       <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left">
@@ -67,7 +71,7 @@ const TableFans = () => {
       {/* This is the first product details section   */}
       <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
         {/* Image and Description Section */}
-        <div className="flex flex-col lg:flex-row justify-center gap-8">
+        <div className="flex flex-col lg:flex-row justify-center gap-8 w-full">
           {/* First Item - Ceiling Fans */}
           <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="w-full lg:w-1/2">
@@ -79,13 +83,11 @@ const TableFans = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Table Fans</strong>
                 <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
+                Step into the world of SS Light's premium table fans, where versatility meets comfort. Whether it's your bedroom, office,
+                 or kitchen, a table fan is the perfect solution for focused airflow. Discover our range of energy-efficient table fans,
+                 designed to provide powerful cooling, easy portability, and adjustable settings for maximum convenience in any space.
               </p>
               <button
                 className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
@@ -93,7 +95,6 @@ const TableFans = () => {
               >
                 Inquiry
               </button>
-
             </div>
           </div>
 
@@ -108,12 +109,11 @@ const TableFans = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Table Fan</strong>
                 <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
+                Step into the world of SS Light's premium table fans, where versatility meets comfort. 
+                Whether it's your bedroom, office, or kitchen, a table fan is the perfect solution for focused airflow. Discover our range of energy-efficient table fans,
+                 designed to provide powerful cooling, easy portability, and adjustable settings for maximum convenience in any space.
               </p>
               <button
                 className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
@@ -141,13 +141,12 @@ const TableFans = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Table Fan</strong>
                 <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
+                Step into the world of SS Light's premium table fans, where versatility meets comfort. Whether it's your bedroom, office, 
+                or kitchen, a table fan is the perfect solution for focused airflow. 
+                Discover our range of energy-efficient table fans, designed to provide powerful cooling, easy portability, 
+                and adjustable settings for maximum convenience in any space.
               </p>
               <button
                 className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
@@ -169,12 +168,12 @@ const TableFans = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Table Fans</strong>
                 <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
+                Step into the world of SS Light's premium table fans, where versatility meets comfort. Whether it's your bedroom, office, or kitchen, 
+                a table fan is the perfect solution for focused airflow.
+                 Discover our range of energy-efficient table fans, designed to provide powerful cooling, easy portability,
+                  and adjustable settings for maximum convenience in any space.
               </p>
               
               <button
@@ -203,13 +202,11 @@ const TableFans = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Table Fans</strong>
                 <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
+                Step into the world of SS Light's premium table fans, where versatility meets comfort. Whether it's your bedroom, office,
+                 or kitchen, a table fan is the perfect solution for focused airflow. Discover our range of energy-efficient table fans,
+                 designed to provide powerful cooling, easy portability, and adjustable settings for maximum convenience in any space.
               </p>
               <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
                 Inquiry
@@ -228,12 +225,11 @@ const TableFans = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Table Fans</strong>
                 <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
+                Step into the world of SS Light's premium table fans, where versatility meets comfort. Whether it's your bedroom, office,
+                 or kitchen, a table fan is the perfect solution for focused airflow. Discover our range of energy-efficient table fans, 
+                designed to provide powerful cooling, easy portability, and adjustable settings for maximum convenience in any space.
               </p>
               <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
                 Inquiry
@@ -242,6 +238,8 @@ const TableFans = () => {
           </div>
         </div>
       </div>
+
+
       {/* This is fourth product details section */}
       <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
         {/* Image and Description Section */}
@@ -257,13 +255,11 @@ const TableFans = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Table Fans</strong>
                 <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
+                Step into the world of SS Light's premium table fans, where versatility meets comfort. Whether it's your bedroom, office, 
+                or kitchen, a table fan is the perfect solution for focused airflow. Discover our range of energy-efficient table fans,
+                 designed to provide powerful cooling, easy portability, and adjustable settings for maximum convenience in any space.
               </p>
               <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
                 Inquiry
@@ -282,12 +278,11 @@ const TableFans = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">Table Fans</strong>
                 <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
+                Step into the world of SS Light's premium table fans, where versatility meets comfort. Whether it's your bedroom, office, 
+                or kitchen, a table fan is the perfect solution for focused airflow. Discover our range of energy-efficient table fans,
+                 designed to provide powerful cooling, easy portability, and adjustable settings for maximum convenience in any space.
               </p>
               <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
                 Inquiry
@@ -303,7 +298,7 @@ const TableFans = () => {
         <FaLightbulb className='text-yellow-500 text-4xl mr-3 glow-effect' />
         Featured Fans
         {/* Underline effect */}
-        <span className='absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] border-b-2 border-black'></span>
+        <span className='absolute top-11 left-1/2 transform -translate-x-1/2 w-[20%] border-b-2 border-black'></span>
       </h1>
       <HotPicSectionDetails />
     </div>

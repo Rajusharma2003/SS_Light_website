@@ -10,29 +10,30 @@ import Footer from '../Components/Pages/Footer';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
+// import image.
+import FanBanner from '../Images/fanImageBanner.jpg'
+import TableBanner from '../Images/TableFanBanner.jpg'
+import FarataBanner from '../Images/farataBanner.jpg'
+import HeaterBanner from '../Images/HeaterBanner.jpg'
+import AboutImage from '../Images/aboutSection.jpg'
+
 
 const HomePage = () => {
-
-
 
   useEffect(() => {
     Aos.init();
   } , [])
 
 
-
   return (
 
-
-
     <>
-
     {/* This is carousel section  */}
       <HomeCarousel/>
 
       {/*Shop By Category section  */}
-      <section className="p-6 bg-gray-100 mt-10"   data-aos="fade-up"
-     data-aos-duration="3000">
+      <section className="p-6 bg-gray-100 mt-10"  data-aos="fade-up"
+     data-aos-duration="2000">
   <h2 className="text-3xl font-bold text-center mb-10">Shop By Category</h2>
   <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
     <Link to="/heaters" className="flex flex-col items-center">
@@ -42,7 +43,7 @@ const HomePage = () => {
           alt="Heater"
           className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-full shadow-lg object-cover"
         />
-        <p className="text-center mt-2 text-sm md:text-base">Heater</p>
+        <p className="text-center mt-2 text-sm md:text-base">HEATERS</p>
       </div>
     </Link>
     <Link to="/fans" className="flex flex-col items-center">
@@ -52,7 +53,7 @@ const HomePage = () => {
           alt="Fan"
           className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-full shadow-lg object-cover"
         />
-        <p className="text-center mt-2 text-sm md:text-base">Fans</p>
+        <p className="text-center mt-2 text-sm md:text-base">FANS</p>
       </div>
     </Link>
     <Link to="/farata" className="flex flex-col items-center">
@@ -62,7 +63,7 @@ const HomePage = () => {
           alt="Farata"
           className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-full shadow-lg object-cover"
         />
-        <p className="text-center mt-2 text-sm md:text-base">Farata</p>
+        <p className="text-center mt-2 text-sm md:text-base">FARATA</p>
       </div>
     </Link>
     <Link to="/tablefans" className="flex flex-col items-center">
@@ -72,12 +73,11 @@ const HomePage = () => {
           alt="Table Fan"
           className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-full shadow-lg object-fill"
         />
-        <p className="text-center mt-2 text-sm md:text-base">Table Fans</p>
+        <p className="text-center mt-2 text-sm md:text-base">TABLE FANS</p>
       </div>
     </Link>
   </div>
 </section>
-
 
 
   {/* This is the about section  */}
@@ -87,7 +87,7 @@ const HomePage = () => {
      data-aos-offset="500"
      data-aos-easing="ease-in-out">
       <img
-        src="https://img.freepik.com/premium-photo/living-room-with-couch-coffee-table-ceiling-fan_954226-421726.jpg?size=626&ext=jpg&ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
+        src={AboutImage}
         alt="Living Room with Ceiling Fan"
         className="w-full max-w-[500px] h-auto object-fill rounded-lg"
       />
@@ -116,7 +116,7 @@ const HomePage = () => {
      data-aos-anchor-placement="bottom-bottom"
     className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[500px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
     style={{
-      backgroundImage: "url('https://www.ushafans.com/sites/default/files/ceiling-fans-bg.png')",
+      backgroundImage: `url(${FanBanner})`,
     }}
   >
     <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left">
@@ -133,29 +133,10 @@ const HomePage = () => {
      data-aos-anchor-placement="bottom-bottom"
     className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-end mt-10 sm:mt-20"
     style={{
-      backgroundImage: "url('https://www.ushafans.com/sites/default/files/Pedestal-banner.png')",
+      backgroundImage: `url(${TableBanner})`,
     }}
   >
-    <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left sm:mr-20 mx-4">
-      <h1 className="text-2xl sm:text-4xl font-bold mb-4">PEDESTAL FANS</h1>
-      <p className="text-sm sm:text-lg">
-      With SSLignt pedestal fans, you have full control over how and where you enjoy a refreshing breeze,
-      whether it's on your patio or indoors. These fans offer adjustable height and an easy tilting mechanism, 
-      ensuring comfort in any space and at every level.
-      </p>
-    </div>
-  </div>
-
-
-    {/* Table Fans Section */}
-    <div  data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom"
-      className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
-      style={{
-        backgroundImage: "url('https://www.ushafans.com/sites/default/files/table-fan-bg.jpg')",
-      }}
-    >
-      <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left">
+    <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left">
         <h1 className="text-2xl sm:text-4xl font-bold mb-4">TABLE FANS</h1>
         <p className="text-sm sm:text-lg">
         Your perfect companion for any spot, whether it's your study, kitchen,
@@ -164,6 +145,45 @@ const HomePage = () => {
         you can effortlessly adjust the air direction to suit your comfort.
         </p>
       </div>
+   
+  </div>
+
+
+    {/* heater  Section */}
+    <div  data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"
+      className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
+      style={{
+        backgroundImage: `url(${HeaterBanner})`,
+      }}
+    >
+      <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left">
+        <h1 className="text-2xl sm:text-4xl font-bold mb-4">HEATERS</h1>
+        <p className="text-sm sm:text-lg">
+        Your ideal partner for cozy warmth, whether it's your bedroom, living room, or office! SSLight heaters are compact and portable,
+         easily placed on a table or floor to provide targeted heat wherever needed. With adjustable temperature settings and safety features,
+          you can enjoy personalized comfort all season long.
+        </p>
+      </div>
+    </div>
+
+
+    {/* Table Fans Section */}
+    <div  data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"
+      className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
+      style={{
+        backgroundImage: `url(${FarataBanner})`,
+      }}
+    >
+     <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left sm:mr-20 mx-4">
+      <h1 className="text-2xl sm:text-4xl font-bold mb-4">PEDESTAL FANS</h1>
+      <p className="text-sm sm:text-lg">
+      With SSLignt pedestal fans, you have full control over how and where you enjoy a refreshing breeze,
+      whether it's on your patio or indoors. These fans offer adjustable height and an easy tilting mechanism, 
+      ensuring comfort in any space and at every level.
+      </p>
+    </div>
     </div>
 
 
@@ -171,9 +191,9 @@ const HomePage = () => {
       <div className='mt-20 bg-gray-100 py-16 relative'>
       <h1 className='text-center font-bold text-3xl mb-32 flex items-center justify-center relative'>
         <FaLightbulb className='text-yellow-500 text-4xl mr-3 glow-effect' />
-        Hot Pick Section
+        MORE FEATURES
         {/* Underline effect */}
-        {/* <span className='absolute top-11 left-1/2 transform -translate-x-1/2 w-[30%] border-b-2 border-black'></span> */}
+        <span className='absolute top-11 left-1/2 transform -translate-x-1/2 w-[20%] border-b-2 border-black'></span>
       </h1>
       <HotPicSectionDetails />
     </div>
@@ -231,9 +251,9 @@ const HomePage = () => {
             {/* Image and Description in Row */}
             <div className="flex flex-col md:flex-row items-center justify-center mb-12 ">
               <div className="w-full md:w-1/3 p-4" data-aos="fade-right"
-     data-aos-offset="500">
+               data-aos-offset="500">
                 <img 
-                  src="https://img.freepik.com/free-photo/portrait-modern-man-cleaning-doing-household-chores_23-2151468739.jpg?size=626&ext=jpg&ga=GA1.1.2025242279.1724825934&semt=ais_hybrid" 
+                  src={AboutImage}
                   alt="Modern Man Cleaning" 
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -285,7 +305,8 @@ const HomePage = () => {
         </div>
         
     {/* this is the map section  */}
-    <div className="w-4/5 mx-auto mt-20 flex flex-col md:flex-row gap-8" data-aos="fade-up">
+    <div className="w-4/5 mx-auto mt-20 flex flex-col md:flex-row gap-8"  data-aos="fade-up"
+     data-aos-duration="5000">
   {/* Contact Form */}
   <div className="md:w-1/2 w-full bg-gray-100 p-6 rounded-lg shadow-lg">
     <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>

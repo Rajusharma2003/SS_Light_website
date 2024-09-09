@@ -10,6 +10,10 @@ import Heater3 from '../../Images/heater3.png'
 import Heater4 from '../../Images/heater4.png'
 import Heater5 from '../../Images/heater5.png'
 import Heater6 from '../../Images/heater6.png'
+import HeaterBanner from '../../Images/HeaterBanner.jpg'
+import banner2 from '../../Images/mainBanner2.jpeg'
+
+
 
 const Heaters = () => {
   return (
@@ -18,7 +22,7 @@ const Heaters = () => {
      {/* this is main image */}
         <div>
          <img
-            src="https://img.freepik.com/premium-photo/cozy-living-room-with-modern-infrared-heater-creating-warm-atmosphere_932138-51107.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
+            src={banner2}
             alt="Fan Category Banner"
             className="w-full h-full object-cover"
           />
@@ -49,80 +53,79 @@ const Heaters = () => {
         className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[500px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
         style={{
           backgroundImage:
-            "url('https://www.ushafans.com/sites/default/files/ceiling-fans-bg.png')",
+           `url(${HeaterBanner})`,
         }}
       >
         <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left">
-          <h1 className="text-2xl sm:text-4xl font-bold mb-4">CEILING FANS</h1>
+          <h1 className="text-2xl sm:text-4xl font-bold mb-4">HEATERS</h1>
           <p className="text-sm sm:text-base">
-            SSLignt ceiling fans combine aesthetics and functionality, featuring
-            stylish designs, bold colors, and advanced technology to perfectly
-            match your lifestyle and home décor.
+          Your ideal partner for cozy warmth, whether it's your bedroom, living room, or office! SSLight heaters are compact and portable,
+         easily placed on a table or floor to provide targeted heat wherever needed. With adjustable temperature settings and safety features,
+          you can enjoy personalized comfort all season long.
           </p>
         </div>
       </div>
 
-      {/* This is the first product details section   */}
-      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
-        {/* Image and Description Section */}
-        <div className="flex flex-col lg:flex-row justify-center gap-8">
-          {/* First Item - Ceiling Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Heater1}
-                alt="Ceiling Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
-              </p>
-              <button
-                className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
-                onClick={() => window.open('https://wa.me/8178196053', '_blank')}
-              >
-                Inquiry
-              </button>
-
-            </div>
-          </div>
-
-          {/* Second Item - Exhaust Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Heater2}
-                alt="Exhaust Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
-              </p>
-              <button
-                className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
-                onClick={() => window.open('https://wa.me/8178196053', '_blank')}
-              >
-                Inquiry
-              </button>
-            </div>
-          </div>
-        </div>
+   {/* This is the first product details section */}
+<div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
+  {/* Image and Description Section */}
+  <div className="flex flex-col lg:flex-row justify-center gap-8 w-full">
+    
+    {/* First Item - Heaters */}
+    <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden w-full lg:w-1/2">
+      <div className="w-full lg:w-1/2">
+        <img
+          src={Heater1}
+          alt="Heater"
+          className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
+        />
       </div>
+      <div className="w-full lg:w-1/2 p-6">
+        <p className="text-lg mb-4">
+          <strong className="text-xl">HEATERS</strong>
+          <br />
+          Your ideal partner for cozy warmth, whether it's your bedroom, living room, or office! SSLight heaters are compact and portable, 
+          easily placed on a table or floor to provide targeted heat wherever needed. 
+          With adjustable temperature settings and safety features, you can enjoy personalized comfort all season long.
+        </p>
+        <button
+          className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
+          onClick={() => window.open('https://wa.me/8178196053', '_blank')}
+        >
+          Inquiry
+        </button>
+      </div>
+    </div>
+
+    {/* Second Item - Heaters */}
+    <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden w-full lg:w-1/2">
+      <div className="w-full lg:w-1/2">
+        <img
+          src={Heater4}
+          alt="Heater"
+          className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
+        />
+      </div>
+      <div className="w-full lg:w-1/2 p-6">
+        <p className="text-lg mb-4">
+          <strong className="text-xl">HEATERS</strong>
+          <br />
+          Your ideal partner for cozy warmth, whether it's your bedroom, living room, or office! SSLight heaters are compact and portable, 
+          easily placed on a table or floor to provide targeted heat wherever needed. 
+          With adjustable temperature settings and safety features, you can enjoy personalized comfort all season long.
+        </p>
+        <button
+          className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
+          onClick={() => window.open('https://wa.me/8178196053', '_blank')}
+        >
+          Inquiry
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
       {/* This is second product details section */}
       <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
@@ -139,13 +142,11 @@ const Heaters = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">HEATERS</strong>
                 <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
+                Your ideal partner for cozy warmth, whether it's your bedroom, living room, or office! SSLight heaters are compact and portable, 
+                easily placed on a table or floor to provide targeted heat wherever needed. 
+                With adjustable temperature settings and safety features, you can enjoy personalized comfort all season long.
               </p>
               <button
                 className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
@@ -167,12 +168,11 @@ const Heaters = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">HEATERS</strong>
                 <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
+                Your ideal partner for cozy warmth, whether it's your bedroom, living room, or office! SSLight heaters are compact and portable, 
+                easily placed on a table or floor to provide targeted heat wherever needed. 
+                With adjustable temperature settings and safety features, you can enjoy personalized comfort all season long.
               </p>
               
               <button
@@ -201,13 +201,11 @@ const Heaters = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">HEATERS</strong>
                 <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
+                Your ideal partner for cozy warmth, whether it's your bedroom, living room, or office! SSLight heaters are compact and portable, 
+                easily placed on a table or floor to provide targeted heat wherever needed. 
+                With adjustable temperature settings and safety features, you can enjoy personalized comfort all season long.
               </p>
               <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
                 Inquiry
@@ -226,12 +224,11 @@ const Heaters = () => {
             </div>
             <div className="w-full lg:w-1/2 p-6">
               <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
+                <strong className="text-xl">HEATERS</strong>
                 <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
+                Your ideal partner for cozy warmth, whether it's your bedroom, living room, or office! SSLight heaters are compact and portable, 
+                easily placed on a table or floor to provide targeted heat wherever needed. 
+                With adjustable temperature settings and safety features, you can enjoy personalized comfort all season long.
               </p>
               <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
                 Inquiry
@@ -247,7 +244,7 @@ const Heaters = () => {
         <FaLightbulb className='text-yellow-500 text-4xl mr-3 glow-effect' />
         Featured Fans
         {/* Underline effect */}
-        <span className='absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] border-b-2 border-black'></span>
+        <span className='absolute top-11 left-1/2 transform -translate-x-1/2 w-[20%] border-b-2 border-black'></span>
       </h1>
       <HotPicSectionDetails />
     </div>

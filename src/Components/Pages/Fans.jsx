@@ -17,6 +17,10 @@ import Fan10 from '../../Images/Fan10.png'
 import Fan11 from '../../Images/Fan11.png'
 import Fan12 from '../../Images/Fan12.png'
 import Fan13 from '../../Images/Fan13.png'
+import FanBanner from '../../Images/fanImageBanner.jpg'
+import banner2 from '../../Images/mainBanner2.jpeg'
+
+
 
 const Fans = () => {
   return (
@@ -24,7 +28,7 @@ const Fans = () => {
       {/* This is main image  */}
       <div className="w-full h-full">
         <img
-          src="https://www.crompton.co.in/cdn/shop/files/Fan-Category-Banner_1920x.webp?v=1691055668"
+          src={banner2}
           alt="Fan Category Banner"
           className="w-full h-full object-cover"
         />
@@ -54,7 +58,7 @@ const Fans = () => {
         className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[500px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
         style={{
           backgroundImage:
-            "url('https://www.ushafans.com/sites/default/files/ceiling-fans-bg.png')",
+           `url(${FanBanner})`,
         }}
       >
         <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left">

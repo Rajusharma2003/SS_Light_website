@@ -1,29 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'; // Adjusted import
+import { Link } from 'react-router-dom';
 import { FaArrowUp, FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import Contact from './Contact';
 
 const Footer = () => {
-  const [showPopup, setShowPopup] = useState(false);
-
-  const togglePopup = () => setShowPopup(!showPopup);
-
-  // Function to handle scroll to top
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
-  // This is for WhatsApp pop-up
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowPopup(true);
-      setTimeout(() => {
-        setShowPopup(false);
-      }, 2000); // Popup hides after 2 seconds
-    }, 4000); // Popup shows every 4 seconds
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <footer className="bg-gray-800 text-white py-12 px-4 ">
@@ -65,49 +48,25 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">Find us on</h3>
           <div className="flex space-x-4 mb-4">
-            <a href="#" className="hover:text-gray-400"><FaFacebookF size={24} /></a>
-            <a href="#" className="hover:text-gray-400"><FaInstagram size={24} /></a>
+            <a href="https://www.facebook.com/sslightsdelhi" className="hover:text-gray-400"><FaFacebookF size={24} /></a>
+            <a href="https://www.instagram.com/sslightsdelhi/?next=%2Fguptaplastics_%2F" className="hover:text-gray-400"><FaInstagram size={24} /></a>
             <a href="#" className="hover:text-gray-400"><FaTwitter size={24} /></a>
             <a href="#" className="hover:text-gray-400"><FaYoutube size={24} /></a>
             <a href="#" className="hover:text-gray-400"><FaLinkedinIn size={24} /></a>
           </div>
         </div>
       </div>
-      {/* This is WhatsApp section */}
-      <div className="fixed bottom-24 right-10 flex flex-col items-center">
-        {/* Popup Message */}
-        {showPopup && (
-          <div className="absolute bottom-16 right-10 w-64 h-auto bg-white text-black p-4 rounded-lg shadow-lg border border-gray-300 transform scale-100 transition-transform duration-300 ease-in-out flex flex-col items-center justify-center">
-            <p className="text-lg font-semibold mb-2">Need Assistance?</p>
-            <p className="text-sm mb-4 text-blue-500">Our team is always ready to help you with any questions or issues you may have. Feel free to reach out for support or inquiries!</p>
-            <p className="text-sm text-blue-500">Click the WhatsApp icon to start a chat with us. We're here to provide the best assistance possible.</p>
-          </div>
-        )}
 
-        {/* WhatsApp Icon */}
+      {/* WhatsApp Icon */}
+      <div className="fixed bottom-24 right-10 flex flex-col items-center">
         <a
-          href="https://wa.me/8178196053" // Replace with your WhatsApp number
-          className={`bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-transform duration-300 ${showPopup ? 'animate-buzz' : ''}`}
+          href="https://wa.me/8178196053"
+          className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-transform duration-300"
           target="_blank"
           rel="noopener noreferrer"
-          onClick={togglePopup} // Toggle popup on click
         >
           <FaWhatsapp className="text-3xl" />
         </a>
-
-        {/* Add custom styles for the buzz animation */}
-        <style jsx>{`
-          @keyframes buzz {
-            0% { transform: translateX(0); }
-            25% { transform: translateX(-5px); }
-            50% { transform: translateX(5px); }
-            75% { transform: translateX(-5px); }
-            100% { transform: translateX(0); }
-          }
-          .animate-buzz {
-            animation: buzz 0.5s infinite;
-          }
-        `}</style>
       </div>
 
       {/* Scroll to Top Button */}

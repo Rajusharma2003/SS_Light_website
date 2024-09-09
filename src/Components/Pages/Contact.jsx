@@ -1,6 +1,9 @@
 import React from 'react'
 import Footer from './Footer';
 
+// import image.
+import aboutImage from '../../Images/contactImage.jpg'
+
 const Contact = () => {
 
   
@@ -20,7 +23,7 @@ const Contact = () => {
     {
       imgSrc: 'https://havells.com/media/wysiwyg/icon-email.svg',
       title: 'Email Support',
-      info: 'customercare@havells.com',
+      info: 'customercare@sslight.com',
       link: 'mailto:customercare@.com', // Email link
     },
   ];
@@ -32,14 +35,14 @@ const Contact = () => {
    {/* This is main image */}
     <div className="w-full h-full">
     <img
-      src="https://havells.com/media/wysiwyg/MicrosoftTeams-image_1_.png"
+      src={aboutImage}
       alt="Fan Category Banner"
-      className="w-full h-full object-cover"
+      className="w-full h-full object-fill"
     />
   </div>
  
 
-    <div className="flex flex-col items-center justify-center p-16 rounded-lg bg-white shadow-lg w-[80%] mx-auto ">
+    <div className="flex flex-col items-center justify-center p-16 rounded-lg bg-white shadow-lg w-[80%] mx-auto mt-10">
       <h1 className="text-3xl font-bold mb-20">Contact Us</h1>
       <div className="flex flex-col md:flex-row justify-evenly w-full items-center gap-8">
         {contactItems.map((item, index) => (
