@@ -9,19 +9,19 @@ const Contact = () => {
   
   const contactItems = [
     {
-      imgSrc: 'https://havells.com/media/wysiwyg/whatsApp.svg',
+      imgSrc: 'https://img.icons8.com/?size=100&id=d5ntEsf0JRhM&format=png&color=000000',
       title: 'WhatsApp Support',
       info: '81781 96053',
       link: 'https://wa.me/9711773333', // WhatsApp link
     },
     {
-      imgSrc: 'https://havells.com/media/wysiwyg/telephone.svg',
+      imgSrc: 'https://img.icons8.com/?size=100&id=9sx51O1rDUtk&format=png&color=000000',
       title: 'Customer Care No.',
       info: '81781 96053',
       link: 'tel:08045771313', // Call link
     },
     {
-      imgSrc: 'https://havells.com/media/wysiwyg/icon-email.svg',
+      imgSrc: 'https://img.icons8.com/?size=100&id=eKlyMs0XteXZ&format=png&color=000000',
       title: 'Email Support',
       info: 'customercare@sslight.com',
       link: 'mailto:customercare@.com', // Email link
