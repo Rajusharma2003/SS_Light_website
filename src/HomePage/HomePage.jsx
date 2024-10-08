@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from 'react';
 import HomeCarousel from './HomeCarousel'
-import { FaLeaf, FaRecycle, FaLightbulb, FaCogs, FaLinkedinIn, FaArrowUp, FaWhatsapp , } from 'react-icons/fa';
+import { FaLeaf, FaRecycle, FaLightbulb, FaCogs, } from 'react-icons/fa';
 
 import { Link } from 'react-router-dom';  
 import HotPicSectionDetails from './HotPicSectionDetails/HotPicSectionDetails';

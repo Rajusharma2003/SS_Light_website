@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Footer from "./Footer";
 import HotPicSectionDetails from "../../HomePage/HotPicSectionDetails/HotPicSectionDetails";
 import { FaLightbulb } from "react-icons/fa";
@@ -10,10 +10,84 @@ import farata3 from '../../Images/farata3.png'
 import farata4 from '../../Images/farata4.png'
 import banner2 from '../../Images/mainBanner2.jpeg'
 import FarataBanner from '../../Images/farataBanner.jpg'
+import { Carousel } from 'react-responsive-carousel';
 
 
+const productData = [
+  {
+    title: 'INFRARED COOKTOP',
+    description: 'MODEL NO : SK1100 ',
+    features: [
+      '3 preset menu',
+      'Adjustable power mode',
+      'Feather touch Control dial',
+      'Infrared heating coil',
+      'Made of high quality ceramic',
+      'Stainless-steel frame that\'s easy to clean',
+      'Suitable for all kinds of utensils'
+    ],
+    carouselImages: [
+      farata1,
+
+    ]
+  },
+  {
+    title: 'INFRARED COOKTOP',
+    description: 'MODEL NO : SK1100 ',
+    features: [
+      '3 preset menu',
+      'Adjustable power mode',
+      'Feather touch Control dial',
+      'Infrared heating coil',
+      'Made of high quality ceramic',
+      'Stainless-steel frame that\'s easy to clean',
+      'Suitable for all kinds of utensils'
+    ],
+    carouselImages: [
+      farata2
+    ]
+  },
+  {
+    title: 'INFRARED COOKTOP',
+    description: 'MODEL NO : SK1100 ',
+    features: [
+      '3 preset menu',
+      'Adjustable power mode',
+      'Feather touch Control dial',
+      'Infrared heating coil',
+      'Made of high quality ceramic',
+      'Stainless-steel frame that\'s easy to clean',
+      'Suitable for all kinds of utensils'
+    ],
+    carouselImages: [
+      farata3
+    ]
+  },
+  {
+    title: 'INFRARED COOKTOP',
+    description: 'MODEL NO : SK1100 ',
+    features: [
+      '3 preset menu',
+      'Adjustable power mode',
+      'Feather touch Control dial',
+      'Infrared heating coil',
+      'Made of high quality ceramic',
+      'Stainless-steel frame that\'s easy to clean',
+      'Suitable for all kinds of utensils'
+    ],
+    carouselImages: [
+      farata4
+    ]
+  },
+  
+ 
+  
+];
 
 const Farata = () => {
+
+  const sectionsRef = useRef({});
+
   return (
 
     <>
@@ -48,191 +122,84 @@ const Farata = () => {
       </div>
 
       {/* this is the sub banner image  */}
-     {/* Pedestal Fans Section */}
-     <div
-      className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
-       style={{
-         backgroundImage: `url(${FarataBanner})`,
-    }}
-  >
-    <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left sm:mr-20 mx-4">
-      <h1 className="text-2xl sm:text-4xl font-bold mb-4">PEDESTAL FANS</h1>
-      <p className="text-sm sm:text-lg">
-      With SSLignt pedestal fans, you have full control over how and where you enjoy a refreshing breeze,
-      whether it's on your patio or indoors. These fans offer adjustable height and an easy tilting mechanism, 
-      ensuring comfort in any space and at every level.
-      </p>
+      <div
+        className="relative bg-cover bg-center bg-no-repeat h-[300px] sm:h-[600px] flex items-center justify-center sm:justify-start mt-10 sm:mt-20"
+        style={{
+          backgroundImage: `url(${FarataBanner})`,
+      }}
+    >
+      <div className="w-full max-w-screen-sm sm:max-w-xl p-4 sm:p-8 bg-opacity-75 text-left sm:mr-20 mx-4">
+        <h1 className="text-2xl sm:text-4xl font-bold mb-4">PEDESTAL FANS</h1>
+        <p className="text-sm sm:text-lg">
+        With SSLignt pedestal fans, you have full control over how and where you enjoy a refreshing breeze,
+        whether it's on your patio or indoors. These fans offer adjustable height and an easy tilting mechanism, 
+        ensuring comfort in any space and at every level.
+        </p>
+      </div>
     </div>
-  </div>
 
+    {/* This is the product section */}
+    <div className="py-8 px-4 mt-10" id="products" ref={(el) => (sectionsRef.current['products'] = el)}>
+      <h1 className='animate__animated text-5xl font-bold text-center mb-8'>Products</h1>
+      <div className="flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-8">
+          {productData && productData.length > 0 ? (
+            productData.map((product, index) => {
+              return (
+                <div
+                  key={index}
+                  className={`bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-6 space-y-4 w-full`}
+                >
+                  {/* Carousel */}
+                  <Carousel
+                    showThumbs={false}
+                    infiniteLoop={true}
+                    showStatus={false}
+                    // autoPlay={true}
+                    interval={3000}
+                    className="w-full h-64"
+                  >
+                    {product.carouselImages.map((imgSrc, i) => (
+                      <div key={i}>
+                        <img
+                          src={imgSrc}
+                          alt={`Slide ${i + 1}`}
+                          className="w-full h-64 object-cover rounded-t-lg"
+                        />
+                      </div>
+                    ))}
+                  </Carousel>
 
-      {/* This is second product details section */}
-      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
-        {/* Image and Description Section */}
-        <div className="flex flex-col lg:flex-row justify-center gap-8">
-          {/* First Item - Ceiling Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={farata1}
-                alt="Ceiling Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Pedestal Fans</strong>
-                <br />
-                Step into the world of SS Light's premium pedestal fans, where comfort is delivered with flexibility and power. 
-                In India's changing climate, a pedestal fan is not just an appliance; it's an essential addition to your home or office.
-                 Explore our range of energy-efficient pedestal fans, 
-                designed to combat heat, dust, and humidity while offering adjustable height and mobility for targeted cooling wherever you need it.
-              </p>
-              <button
-                className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
-                onClick={() => window.open('https://wa.me/8178196053', '_blank')}
-              >
-                Inquiry
-              </button>
-            </div>
-          </div>
+                  <h1 className="text-xl font-semibold">{product.title}</h1>
+                  <p className="text-gray-700">{product.description}</p>
 
-          {/* Second Item - Exhaust Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={farata1}
-                alt="Exhaust Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Pedestal Fans</strong>
-                <br />
-                Step into the world of SS Light's premium pedestal fans, where comfort is delivered with flexibility and power. 
-                In India's changing climate, a pedestal fan is not just an appliance; it's an essential addition to your home or office.
-                 Explore our range of energy-efficient pedestal fans, 
-                designed to combat heat, dust, and humidity while offering adjustable height and mobility for targeted cooling wherever you need it.
-              </p>
-              
-              <button
-                className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
-                onClick={() => window.open('https://wa.me/8178196053', '_blank')}
-              >
-                Inquiry
-              </button>
-            </div>
-          </div>
+                  {/* Features Section */}
+                  <h3 className="text-lg font-medium mt-4">Features</h3>
+                  <ul className="list-disc list-inside text-gray-600">
+                    {product.features && product.features.map((feature, i) => (
+                      <li key={i}>{feature}</li>
+                    ))}
+                  </ul>
+
+                  {/* Enquiry Button */}
+                  <a
+                    href="https://wa.me/+918130405294" // Replace with your WhatsApp number
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2"
+                  >
+                    <span>Enquiry Now</span>
+                  </a>
+                </div>
+              );
+            })
+          ) : (
+            <p className="text-center text-gray-500">No products available</p>
+          )}
         </div>
       </div>
+    </div>
 
-      {/* This is third product details section */}
-      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
-        {/* Image and Description Section */}
-        <div className="flex flex-col lg:flex-row justify-center gap-8">
-          {/* First Item - Ceiling Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={farata2}
-                alt="Ceiling Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Pedestal Fans</strong>
-                <br />
-                Step into the world of SS Light's premium pedestal fans, where comfort is delivered with flexibility and power. 
-                In India's changing climate, a pedestal fan is not just an appliance; it's an essential addition to your home or office.
-                 Explore our range of energy-efficient pedestal fans, 
-                designed to combat heat, dust, and humidity while offering adjustable height and mobility for targeted cooling wherever you need it.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-
-          {/* Second Item - Exhaust Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={farata3}
-                alt="Exhaust Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Pedestal Fans</strong>
-                <br />
-                Step into the world of SS Light's premium pedestal fans, where comfort is delivered with flexibility and power. 
-                In India's changing climate, a pedestal fan is not just an appliance; it's an essential addition to your home or office.
-                 Explore our range of energy-efficient pedestal fans, 
-                designed to combat heat, dust, and humidity while offering adjustable height and mobility for targeted cooling wherever you need it.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* This is forth product details section */}
-      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
-        {/* Image and Description Section */}
-        <div className="flex flex-col lg:flex-row justify-center gap-8">
-          {/* First Item - Ceiling Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={farata4}
-                alt="Ceiling Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Pedestal Fans</strong>
-                <br />
-                Step into the world of SS Light's premium pedestal fans, where comfort is delivered with flexibility and power. 
-                In India's changing climate, a pedestal fan is not just an appliance; it's an essential addition to your home or office.
-                 Explore our range of energy-efficient pedestal fans, 
-                designed to combat heat, dust, and humidity while offering adjustable height and mobility for targeted cooling wherever you need it.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-
-          {/* Second Item - Exhaust Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={farata4}
-                alt="Exhaust Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Pedestal Fans</strong>
-                <br />
-                Step into the world of SS Light's premium pedestal fans, where comfort is delivered with flexibility and power. 
-                In India's changing climate, a pedestal fan is not just an appliance; it's an essential addition to your home or office.
-                 Explore our range of energy-efficient pedestal fans, 
-                designed to combat heat, dust, and humidity while offering adjustable height and mobility for targeted cooling wherever you need it.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* This is hot pic section */}
       <div className='mt-20 bg-gray-100 py-16 relative'>

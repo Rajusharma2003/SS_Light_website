@@ -1,7 +1,13 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
 import Footer from "./Footer";
 import HotPicSectionDetails from "../../HomePage/HotPicSectionDetails/HotPicSectionDetails";
 import { FaLightbulb } from "react-icons/fa";
+import React, { useEffect, useRef, useState } from 'react'
+
+
+// This is for the product carousel 
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel CSS
 
 // import image
 import Fan1 from '../../Images/Fan1.jpg'
@@ -22,8 +28,225 @@ import banner2 from '../../Images/mainBanner2.jpeg'
 
 
 
+  // This is the product data.
+  const productData = [
+    {
+      title: 'INFRARED COOKTOP',
+      description: 'MODEL NO : SK1100 ',
+      features: [
+        '3 preset menu',
+        'Adjustable power mode',
+        'Feather touch Control dial',
+        'Infrared heating coil',
+        'Made of high quality ceramic',
+        'Stainless-steel frame that\'s easy to clean',
+        'Suitable for all kinds of utensils'
+      ],
+      carouselImages: [
+       Fan1,
+
+      ]
+    },
+    {
+      title: 'INFRARED COOKTOP',
+      description: 'MODEL NO : SK1100 ',
+      features: [
+        '3 preset menu',
+        'Adjustable power mode',
+        'Feather touch Control dial',
+        'Infrared heating coil',
+        'Made of high quality ceramic',
+        'Stainless-steel frame that\'s easy to clean',
+        'Suitable for all kinds of utensils'
+      ],
+      carouselImages: [
+      Fan2
+      ]
+    },
+    {
+      title: 'INFRARED COOKTOP',
+      description: 'MODEL NO : SK1100 ',
+      features: [
+        '3 preset menu',
+        'Adjustable power mode',
+        'Feather touch Control dial',
+        'Infrared heating coil',
+        'Made of high quality ceramic',
+        'Stainless-steel frame that\'s easy to clean',
+        'Suitable for all kinds of utensils'
+      ],
+      carouselImages: [
+        Fan3
+      ]
+    },
+    {
+      title: 'INFRARED COOKTOP',
+      description: 'MODEL NO : SK1100 ',
+      features: [
+        '3 preset menu',
+        'Adjustable power mode',
+        'Feather touch Control dial',
+        'Infrared heating coil',
+        'Made of high quality ceramic',
+        'Stainless-steel frame that\'s easy to clean',
+        'Suitable for all kinds of utensils'
+      ],
+      carouselImages: [
+        Fan4
+      ]
+    },
+    {
+      title: 'INFRARED COOKTOP',
+      description: 'MODEL NO : SK1100 ',
+      features: [
+        '3 preset menu',
+        'Adjustable power mode',
+        'Feather touch Control dial',
+        'Infrared heating coil',
+        'Made of high quality ceramic',
+        'Stainless-steel frame that\'s easy to clean',
+        'Suitable for all kinds of utensils'
+      ],
+      carouselImages: [
+       Fan5
+      ]
+    },
+    {
+      title: 'INFRARED COOKTOP',
+      description: 'MODEL NO : SK1100 ',
+      features: [
+        '3 preset menu',
+        'Adjustable power mode',
+        'Feather touch Control dial',
+        'Infrared heating coil',
+        'Made of high quality ceramic',
+        'Stainless-steel frame that\'s easy to clean',
+        'Suitable for all kinds of utensils'
+      ],
+      carouselImages: [
+       Fan6
+      ]
+    },
+    {
+      title: 'INFRARED COOKTOP',
+      description: 'MODEL NO : SK1100 ',
+      features: [
+        '3 preset menu',
+        'Adjustable power mode',
+        'Feather touch Control dial',
+        'Infrared heating coil',
+        'Made of high quality ceramic',
+        'Stainless-steel frame that\'s easy to clean',
+        'Suitable for all kinds of utensils'
+      ],
+      carouselImages: [
+       Fan7
+      ]
+    },
+    {
+      title: 'INFRARED COOKTOP',
+      description: 'MODEL NO : SK1100 ',
+      features: [
+        '3 preset menu',
+        'Adjustable power mode',
+        'Feather touch Control dial',
+        'Infrared heating coil',
+        'Made of high quality ceramic',
+        'Stainless-steel frame that\'s easy to clean',
+        'Suitable for all kinds of utensils'
+      ],
+      carouselImages: [
+       Fan8
+      ]
+    },
+    {
+      title: 'INFRARED COOKTOP',
+      description: 'MODEL NO : SK1100 ',
+      features: [
+        '3 preset menu',
+        'Adjustable power mode',
+        'Feather touch Control dial',
+        'Infrared heating coil',
+        'Made of high quality ceramic',
+        'Stainless-steel frame that\'s easy to clean',
+        'Suitable for all kinds of utensils'
+      ],
+      carouselImages: [
+       Fan9
+      ]
+    },
+    {
+      title: 'INFRARED COOKTOP',
+      description: 'MODEL NO : SK1100 ',
+      features: [
+        '3 preset menu',
+        'Adjustable power mode',
+        'Feather touch Control dial',
+        'Infrared heating coil',
+        'Made of high quality ceramic',
+        'Stainless-steel frame that\'s easy to clean',
+        'Suitable for all kinds of utensils'
+      ],
+      carouselImages: [
+       Fan10
+      ]
+    },
+    {
+      title: 'INFRARED COOKTOP',
+      description: 'MODEL NO : SK1100 ',
+      features: [
+        '3 preset menu',
+        'Adjustable power mode',
+        'Feather touch Control dial',
+        'Infrared heating coil',
+        'Made of high quality ceramic',
+        'Stainless-steel frame that\'s easy to clean',
+        'Suitable for all kinds of utensils'
+      ],
+      carouselImages: [
+       Fan11
+      ]
+    },
+    {
+      title: 'INFRARED COOKTOP',
+      description: 'MODEL NO : SK1100 ',
+      features: [
+        '3 preset menu',
+        'Adjustable power mode',
+        'Feather touch Control dial',
+        'Infrared heating coil',
+        'Made of high quality ceramic',
+        'Stainless-steel frame that\'s easy to clean',
+        'Suitable for all kinds of utensils'
+      ],
+      carouselImages: [
+       Fan12
+      ]
+    },
+    {
+      title: 'INFRARED COOKTOP',
+      description: 'MODEL NO : SK1100 ',
+      features: [
+        '3 preset menu',
+        'Adjustable power mode',
+        'Feather touch Control dial',
+        'Infrared heating coil',
+        'Made of high quality ceramic',
+        'Stainless-steel frame that\'s easy to clean',
+        'Suitable for all kinds of utensils'
+      ],
+      carouselImages: [
+       Fan13
+      ]
+    },
+    
+  ];
+
 const Fans = () => {
+
+  const sectionsRef = useRef({});
   return (
+    
     <>
       {/* This is main image  */}
       <div className="w-full h-full">
@@ -71,413 +294,70 @@ const Fans = () => {
         </div>
       </div>
 
-      {/* This is the first product details section   */}
-      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
-        {/* Image and Description Section */}
-        <div className="flex flex-col lg:flex-row justify-center gap-8">
-          {/* First Item - Ceiling Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan1}
-                alt="Ceiling Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
-              </p>
-              <button
-                className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
-                onClick={() => window.open('https://wa.me/8178196053', '_blank')}
-              >
-                Inquiry
-              </button>
 
-            </div>
-          </div>
+    {/* This is the product section */}
+    <div className="py-8 px-4 mt-10" id="products" ref={(el) => (sectionsRef.current['products'] = el)}>
+      <h1 className='animate__animated text-5xl font-bold text-center mb-8'>Products</h1>
+      <div className="flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-8">
+          {productData && productData.length > 0 ? (
+            productData.map((product, index) => {
+              return (
+                <div
+                  key={index}
+                  className={`bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-6 space-y-4 w-full`}
+                >
+                  {/* Carousel */}
+                  <Carousel
+                    showThumbs={false}
+                    infiniteLoop={true}
+                    showStatus={false}
+                    // autoPlay={true}
+                    interval={3000}
+                    className="w-full h-64"
+                  >
+                    {product.carouselImages.map((imgSrc, i) => (
+                      <div key={i}>
+                        <img
+                          src={imgSrc}
+                          alt={`Slide ${i + 1}`}
+                          className="w-full h-64 object-cover rounded-t-lg"
+                        />
+                      </div>
+                    ))}
+                  </Carousel>
 
-          {/* Second Item - Exhaust Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan2}
-                alt="Exhaust Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
-              </p>
-              <button
-                className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
-                onClick={() => window.open('https://wa.me/8178196053', '_blank')}
-              >
-                Inquiry
-              </button>
-            </div>
-          </div>
+                  <h1 className="text-xl font-semibold">{product.title}</h1>
+                  <p className="text-gray-700">{product.description}</p>
+
+                  {/* Features Section */}
+                  <h3 className="text-lg font-medium mt-4">Features</h3>
+                  <ul className="list-disc list-inside text-gray-600">
+                    {product.features && product.features.map((feature, i) => (
+                      <li key={i}>{feature}</li>
+                    ))}
+                  </ul>
+
+                  {/* Enquiry Button */}
+                  <a
+                    href="https://wa.me/+918130405294" // Replace with your WhatsApp number
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2"
+                  >
+                    <span>Enquiry Now</span>
+                  </a>
+                </div>
+              );
+            })
+          ) : (
+            <p className="text-center text-gray-500">No products available</p>
+          )}
         </div>
       </div>
+    </div>
 
-      {/* This is second product details section */}
-      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
-        {/* Image and Description Section */}
-        <div className="flex flex-col lg:flex-row justify-center gap-8">
-          {/* First Item - Ceiling Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan3}
-                alt="Ceiling Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
-              </p>
-              <button
-                className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
-                onClick={() => window.open('https://wa.me/8178196053', '_blank')}
-              >
-                Inquiry
-              </button>
-            </div>
-          </div>
-
-          {/* Second Item - Exhaust Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan4}
-                alt="Exhaust Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
-              </p>
-              
-              <button
-                className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110"
-                onClick={() => window.open('https://wa.me/8178196053', '_blank')}
-              >
-                Inquiry
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* This is third product details section */}
-      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
-        {/* Image and Description Section */}
-        <div className="flex flex-col lg:flex-row justify-center gap-8">
-          {/* First Item - Ceiling Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan5}
-                alt="Ceiling Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-
-          {/* Second Item - Exhaust Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan6}
-                alt="Exhaust Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      {/* This is fourth product details section */}
-      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
-        {/* Image and Description Section */}
-        <div className="flex flex-col lg:flex-row justify-center gap-8">
-          {/* First Item - Ceiling Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan7}
-                alt="Ceiling Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-
-          {/* Second Item - Exhaust Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan8}
-                alt="Exhaust Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      {/* This is fifth product details section */}
-      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
-        {/* Image and Description Section */}
-        <div className="flex flex-col lg:flex-row justify-center gap-8">
-          {/* First Item - Ceiling Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan9}
-                alt="Ceiling Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-
-          {/* Second Item - Exhaust Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan10}
-                alt="Exhaust Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      {/* This is sixth product details section */}
-      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
-        {/* Image and Description Section */}
-        <div className="flex flex-col lg:flex-row justify-center gap-8">
-          {/* First Item - Ceiling Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan11}
-                alt="Ceiling Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-
-          {/* Second Item - Exhaust Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan12}
-                alt="Exhaust Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      {/* This is seven product details section */}
-      <div className="flex flex-col items-center justify-center px-6 py-10 bg-gray-100">
-        {/* Image and Description Section */}
-        <div className="flex flex-col lg:flex-row justify-center gap-8">
-          {/* First Item - Ceiling Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan13}
-                alt="Ceiling Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Step into the world of Crompton's premium ceiling fans, where
-                comfort knows no season. In India's ever-changing weather, a
-                ceiling fan is not just an appliance; it's a necessity. Discover
-                our wide range of energy-efficient fans, designed to combat
-                heat, dust, and humidity.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-
-          {/* Second Item - Exhaust Fans */}
-          <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full lg:w-1/2">
-              <img
-                src={Fan6}
-                alt="Exhaust Fan"
-                className="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-105"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 p-6">
-              <p className="text-lg mb-4">
-                <strong className="text-xl">Ceiling Fans</strong>
-                <br />
-                Elevate your home's air quality with Crompton's exhaust fans.
-                They're not just a breath of fresh air; they're a commitment to
-                year-round well-being. Our exhaust fans eliminate stale odours,
-                ensuring your home remains fresh and healthy.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-110">
-                Inquiry
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* This is hot pic section */}
+      {/* This is Featured Fans section */}
       <div className='mt-20 bg-gray-100 py-16 relative'>
       <h1 className='text-center font-bold text-3xl mb-32 flex items-center justify-center relative'>
         <FaLightbulb className='text-yellow-500 text-4xl mr-3 glow-effect' />

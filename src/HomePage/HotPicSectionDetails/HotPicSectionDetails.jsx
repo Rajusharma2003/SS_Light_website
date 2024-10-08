@@ -76,6 +76,7 @@ const carouselData = [
 ];
 
 const HotPicSectionDetails = () => {
+  
   const carouselRef = useRef(null);
 
   const responsive = {
