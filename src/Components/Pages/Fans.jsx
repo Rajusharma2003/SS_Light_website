@@ -369,7 +369,7 @@ const Fans = () => {
 
                   {/* Enquiry Button */}
                   <a
-                    href="https://wa.me/+918130405294" // Replace with your WhatsApp number
+                    href="https://wa.me/+918178196053" // Replace with your WhatsApp number
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2 mt-4"
