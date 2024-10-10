@@ -20,16 +20,10 @@ import { Carousel } from 'react-responsive-carousel';
 // This is the product data.
 const productData = [
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Kross AP Fan',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Sweep: 300 mm',
+      ' Revolving Table fan',
     ],
     carouselImages: [
       TableFan1,
@@ -37,48 +31,33 @@ const productData = [
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Pearl AP Fan',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Sweep: 225 / 300 mm',
+      'High-Speed',
+      'Table cum Wall Fan Revolving & non revolving',
     ],
     carouselImages: [
       TableFan2
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
+    title: 'Aartic-1 AP Fan',
     description: 'MODEL NO : SK1100 ',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Sweep: 300 mm',
+      'High-Speed Table fan',
     ],
     carouselImages: [
       TableFan3
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
+    title: 'Aartic-2 AP Fan',
     description: 'MODEL NO : SK1100 ',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Sweep: 300 mm',
+      'High-Speed Table fan',
     ],
     carouselImages: [
       TableFan4
@@ -86,64 +65,40 @@ const productData = [
   },
   
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Strom AP Fan',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Sweep: 225mm ',
+      'High-Speed Table fan',
     ],
     carouselImages: [
       TableFan5
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Chill Air Table Fan',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Sweep: 225mm ',
+      'High-Speed Table fan',
     ],
     carouselImages: [
       TableFan6
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Roto Grill',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Sweep: 300mm',
+      'High-Speed Table Fan',
     ],
     carouselImages: [
       TableFan7
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Cabin Fan',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Sweep: 225mm',
+      'High-Speed Table Fan',
     ],
     carouselImages: [
       TableFan8

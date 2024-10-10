@@ -15,16 +15,10 @@ import { Carousel } from 'react-responsive-carousel';
 
 const productData = [
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Pedastal Fan',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Sweep: 400 mm',
+      'High-Speed',
     ],
     carouselImages: [
       farata1,
@@ -32,48 +26,30 @@ const productData = [
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Pedastal Fan',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Sweep: 400 mm',
+      'High-Speed',
     ],
     carouselImages: [
       farata2
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Pedastal Fan',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Sweep: 400 mm',
+      'High-Speed',
     ],
     carouselImages: [
       farata3
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Pedastal Fan',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Sweep: 400 mm',
+      'High-Speed',
     ],
     carouselImages: [
       farata4
@@ -164,7 +140,7 @@ const Farata = () => {
                         <img
                           src={imgSrc}
                           alt={`Slide ${i + 1}`}
-                          className="w-full h-64 object-cover rounded-t-lg"
+                          className="w-full h-64 object-contain rounded-t-lg"
                         />
                       </div>
                     ))}

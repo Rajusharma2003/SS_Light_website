@@ -10,7 +10,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel CSS
 
 // import image
-import Fan1 from '../../Images/Fan1.jpg'
+import Fan1 from '../../Images/Fan1.png'
 import Fan2 from '../../Images/Fan2.png'
 import Fan3 from '../../Images/Fan3.png'
 import Fan4 from '../../Images/Fan4.png'
@@ -23,6 +23,7 @@ import Fan10 from '../../Images/Fan10.png'
 import Fan11 from '../../Images/Fan11.png'
 import Fan12 from '../../Images/Fan12.png'
 import Fan13 from '../../Images/Fan13.png'
+import Fan14 from '../../Images/Fan14.png'
 import FanBanner from '../../Images/fanImageBanner.jpg'
 import banner2 from '../../Images/mainBanner2.jpeg'
 
@@ -31,213 +32,228 @@ import banner2 from '../../Images/mainBanner2.jpeg'
   // This is the product data.
   const productData = [
     {
-      title: 'INFRARED COOKTOP',
-      description: 'MODEL NO : SK1100 ',
+      title: 'Senorita Ceiling Fan',
+      // description: 'MODEL NO : SK1100 ',
       features: [
-        '3 preset menu',
-        'Adjustable power mode',
-        'Feather touch Control dial',
-        'Infrared heating coil',
-        'Made of high quality ceramic',
-        'Stainless-steel frame that\'s easy to clean',
-        'Suitable for all kinds of utensils'
+        'Sweep: 1200 mm / 600 mm',
+        'High-Speed Ceiling Fan',
       ],
       carouselImages: [
-       Fan1,
-
-      ]
+        Fan1,
+      ],
+      colors: [
+        { name: 'Blue', hex: '#3B82F6' },   // Tailwind blue-500
+        { name: 'Black', hex: '#000000' },  // Black
+        { name: 'Ivory', hex: '#FFFFF0' },  // Ivory
+      ],
     },
     {
-      title: 'INFRARED COOKTOP',
-      description: 'MODEL NO : SK1100 ',
-      features: [
-        '3 preset menu',
-        'Adjustable power mode',
-        'Feather touch Control dial',
-        'Infrared heating coil',
-        'Made of high quality ceramic',
-        'Stainless-steel frame that\'s easy to clean',
-        'Suitable for all kinds of utensils'
+      title:'Senorita Ceiling Fan',
+      // description: 'MODEL NO : SK1100 ',
+      features: [ 
+        'Sweep: 1200 mm / 600 mm',
+        'High-Speed Ceiling Fan',
       ],
       carouselImages: [
       Fan2
-      ]
+      ],
+      colors: [
+        { name: 'Blue', hex: '#3B82F6' },   // Tailwind blue-500
+        { name: 'Black', hex: '#000000' },  // Black
+        { name: 'Ivory', hex: '#FFFFF0' },  // Ivory
+      ],
     },
     {
-      title: 'INFRARED COOKTOP',
-      description: 'MODEL NO : SK1100 ',
+      title: 'Senorita Ceiling Fan',
+      // description: 'MODEL NO : SK1100 ',
       features: [
-        '3 preset menu',
-        'Adjustable power mode',
-        'Feather touch Control dial',
-        'Infrared heating coil',
-        'Made of high quality ceramic',
-        'Stainless-steel frame that\'s easy to clean',
-        'Suitable for all kinds of utensils'
+        'Sweep: 1200 mm / 600 mm',
+        'High-Speed Ceiling Fan',
       ],
       carouselImages: [
         Fan3
-      ]
+      ],
+      colors: [
+        { name: 'Blue', hex: '#3B82F6' },   // Tailwind blue-500
+        { name: 'Black', hex: '#000000' },  // Black
+        { name: 'Ivory', hex: '#FFFFF0' },  // Ivory
+      ],
     },
     {
-      title: 'INFRARED COOKTOP',
-      description: 'MODEL NO : SK1100 ',
+      title: 'Magic Ceiling Fan',
+      // description: 'MODEL NO : SK1100 ',
       features: [
-        '3 preset menu',
-        'Adjustable power mode',
-        'Feather touch Control dial',
-        'Infrared heating coil',
-        'Made of high quality ceramic',
-        'Stainless-steel frame that\'s easy to clean',
-        'Suitable for all kinds of utensils'
+        'Sweep: 1200mm',
+        'High-Speed Ceiling Fan',
       ],
       carouselImages: [
         Fan4
-      ]
+      ],
+      colors: [
+        { name: 'Blue', hex: '#3B82F6' },   // Tailwind blue-500
+      ],
     },
     {
-      title: 'INFRARED COOKTOP',
-      description: 'MODEL NO : SK1100 ',
+      title: 'Galaxy Ceiling Fan',
+      // description: 'MODEL NO : SK1100 ',
       features: [
-        '3 preset menu',
-        'Adjustable power mode',
-        'Feather touch Control dial',
-        'Infrared heating coil',
-        'Made of high quality ceramic',
-        'Stainless-steel frame that\'s easy to clean',
-        'Suitable for all kinds of utensils'
+        'Sweep: 1200 mm',
+        'High-Speed Ceiling Fan',
       ],
       carouselImages: [
        Fan5
-      ]
+      ],
+      colors: [
+        { name: 'White', hex: '#726455' },   // Tailwind blue-500
+        { name: 'Smoke Brown', hex: '#FFFFFF' },  // Black
+      ],
     },
     {
-      title: 'INFRARED COOKTOP',
-      description: 'MODEL NO : SK1100 ',
+      title: 'Jwels Ceiling Fan',
+      // description: 'MODEL NO : SK1100 ',
       features: [
-        '3 preset menu',
-        'Adjustable power mode',
-        'Feather touch Control dial',
-        'Infrared heating coil',
-        'Made of high quality ceramic',
-        'Stainless-steel frame that\'s easy to clean',
-        'Suitable for all kinds of utensils'
+        'Sweep: 1200 mm',
+        'High-Speed Ceiling Fan',
+      ],
+      carouselImages: [
+       Fan14
+      ],
+      colors: [
+        { name: 'Cool Blue', hex: '#4981CE' },   // Tailwind blue-500
+        { name: 'Tri-tone Blue', hex: '#3A5FCD ' },  // Tri-tone Blue
+        { name: 'Blue', hex: '#0000FF ' },  // Blue
+        { name: 'Smoke Brown', hex: '#726455 ' },  // Smoke Brown
+      ],
+    },
+    {
+      title: 'Jaguar Ceiling Fan ',
+      // description: 'MODEL NO : SK1100 ',
+      features: [
+        'Sweep: 600 mm ',
+        'High-Speed Ceiling Fan',
       ],
       carouselImages: [
        Fan6
-      ]
+      ],
+      colors: [
+        { name: 'Smoke Brown ', hex: '#726455' },   // Smoke Brown
+        { name: 'Tri-tone', hex: '#3A5FCD' },  // Tri-tone
+        { name: 'Pearl White', hex: '#F8F6F0 ' },  // Pearl White
+        { name: 'Blue', hex: '#0000FF ' },  // Blue
+      ],
     },
     {
-      title: 'INFRARED COOKTOP',
-      description: 'MODEL NO : SK1100 ',
+      title: 'Jaguar Ceiling Fan ',
+      // description: 'MODEL NO : SK1100 ',
       features: [
-        '3 preset menu',
-        'Adjustable power mode',
-        'Feather touch Control dial',
-        'Infrared heating coil',
-        'Made of high quality ceramic',
-        'Stainless-steel frame that\'s easy to clean',
-        'Suitable for all kinds of utensils'
+        'Sweep: 600 mm ',
+        'High-Speed Ceiling Fan',
       ],
       carouselImages: [
        Fan7
-      ]
+      ],
+      colors: [
+        { name: 'Smoke Brown ', hex: '#726455' },   // Smoke Brown
+        { name: 'Tri-tone', hex: '#3A5FCD' },  // Tri-tone
+        { name: 'Pearl White', hex: '#F8F6F0 ' },  // Pearl White
+        { name: 'Blue', hex: '#0000FF ' },  // Blue
+      ],
     },
     {
-      title: 'INFRARED COOKTOP',
-      description: 'MODEL NO : SK1100 ',
+      title: 'Jaguar Ceiling Fan ',
+      // description: 'MODEL NO : SK1100 ',
       features: [
-        '3 preset menu',
-        'Adjustable power mode',
-        'Feather touch Control dial',
-        'Infrared heating coil',
-        'Made of high quality ceramic',
-        'Stainless-steel frame that\'s easy to clean',
-        'Suitable for all kinds of utensils'
+        'Sweep: 600 mm ',
+        'High-Speed Ceiling Fan',
       ],
       carouselImages: [
        Fan8
-      ]
+      ],
+      colors: [
+        { name: 'Smoke Brown ', hex: '#726455' },   // Smoke Brown
+        { name: 'Tri-tone', hex: '#3A5FCD' },  // Tri-tone
+        { name: 'Pearl White', hex: '#F8F6F0 ' },  // Pearl White
+        { name: 'Blue', hex: '#0000FF ' },  // Blue
+      ],
     },
     {
-      title: 'INFRARED COOKTOP',
-      description: 'MODEL NO : SK1100 ',
+      title: 'Jagaur Pro Ceiling Fan',
+      // description: 'MODEL NO : SK1100 ',
       features: [
-        '3 preset menu',
-        'Adjustable power mode',
-        'Feather touch Control dial',
-        'Infrared heating coil',
-        'Made of high quality ceramic',
-        'Stainless-steel frame that\'s easy to clean',
-        'Suitable for all kinds of utensils'
+        'Sweep: 600 mm',
+        'High-Speed Ceiling Fan',
       ],
       carouselImages: [
        Fan9
-      ]
+      ],
+      colors: [
+        { name: 'Smoke Brown ', hex: '#726455' },   // Smoke Brown
+        { name: 'white', hex: '#FFFFFF' },  // white
+      ],
     },
     {
-      title: 'INFRARED COOKTOP',
-      description: 'MODEL NO : SK1100 ',
+      title: 'Eco Ceiling Fan',
+      // description: 'MODEL NO : SK1100 ',
       features: [
-        '3 preset menu',
-        'Adjustable power mode',
-        'Feather touch Control dial',
-        'Infrared heating coil',
-        'Made of high quality ceramic',
-        'Stainless-steel frame that\'s easy to clean',
-        'Suitable for all kinds of utensils'
+        'Sweep: 1200 mm ',
+        'High-Speed Ceiling Fan',
       ],
       carouselImages: [
        Fan10
-      ]
+      ],
+      colors: [
+        { name: 'Smoke Brown ', hex: '#726455' },   // Smoke Brown
+        { name: 'Tri-tone', hex: '#3A5FCD' },  // Tri-tone
+        { name: 'white', hex: '#FFFFFF' },  // white
+      ],
     },
     {
-      title: 'INFRARED COOKTOP',
-      description: 'MODEL NO : SK1100 ',
+      title: 'Eco Ceiling Fan',
+      // description: 'MODEL NO : SK1100 ',
       features: [
-        '3 preset menu',
-        'Adjustable power mode',
-        'Feather touch Control dial',
-        'Infrared heating coil',
-        'Made of high quality ceramic',
-        'Stainless-steel frame that\'s easy to clean',
-        'Suitable for all kinds of utensils'
+        'Sweep: 600 mm',
+        'High-Speed Ceiling Fan',
       ],
       carouselImages: [
        Fan11
-      ]
+      ],
+      colors: [
+        { name: 'Smoke Brown ', hex: '#726455' },   // Smoke Brown
+        { name: 'Tri-tone', hex: '#3A5FCD' },  // Tri-tone
+        { name: 'white', hex: '#FFFFFF' },  // white
+      ],
     },
     {
-      title: 'INFRARED COOKTOP',
-      description: 'MODEL NO : SK1100 ',
+      title: 'crown dlx Ceiling Fan',
+      // description: 'MODEL NO : SK1100 ',
       features: [
-        '3 preset menu',
-        'Adjustable power mode',
-        'Feather touch Control dial',
-        'Infrared heating coil',
-        'Made of high quality ceramic',
-        'Stainless-steel frame that\'s easy to clean',
-        'Suitable for all kinds of utensils'
+        'Sweep: 1200 mm',
+        'High-Speed Ceiling Fan',
       ],
       carouselImages: [
        Fan12
-      ]
+      ],
+      colors: [
+        { name: 'Smoke Brown ', hex: '#726455' },   // Smoke Brown
+        { name: 'white', hex: '#FFFFFF' },  // white
+        { name: 'Ivory', hex: '#FFFFF0' },  // Ivory
+      ],
     },
     {
-      title: 'INFRARED COOKTOP',
-      description: 'MODEL NO : SK1100 ',
+      title: 'crown dlx Ceiling Fan',
+      // description: 'MODEL NO : SK1100 ',
       features: [
-        '3 preset menu',
-        'Adjustable power mode',
-        'Feather touch Control dial',
-        'Infrared heating coil',
-        'Made of high quality ceramic',
-        'Stainless-steel frame that\'s easy to clean',
-        'Suitable for all kinds of utensils'
+        'Sweep: 1200 mm',
+        'High-Speed Ceiling Fan',
       ],
       carouselImages: [
        Fan13
-      ]
+      ],
+      colors: [
+        { name: 'Smoke Brown ', hex: '#726455' },   // Smoke Brown
+        { name: 'white', hex: '#FFFFFF' },  // white
+        { name: 'Ivory', hex: '#FFFFF0' },  // Ivory
+      ],
     },
     
   ];
@@ -296,7 +312,7 @@ const Fans = () => {
 
 
     {/* This is the product section */}
-    <div className="py-8 px-4 mt-10" id="products" ref={(el) => (sectionsRef.current['products'] = el)}>
+    <div className="py-8 px-4 mt-10" id="products">
       <h1 className='animate__animated text-5xl font-bold text-center mb-8'>Products</h1>
       <div className="flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-8">
@@ -312,7 +328,6 @@ const Fans = () => {
                     showThumbs={false}
                     infiniteLoop={true}
                     showStatus={false}
-                    // autoPlay={true}
                     interval={3000}
                     className="w-full h-64"
                   >
@@ -338,12 +353,26 @@ const Fans = () => {
                     ))}
                   </ul>
 
+                  {/* Available Colors Section */}
+                  <h3 className="text-lg font-medium mt-4">Available Colors</h3>
+                  <div className="flex space-x-4 mt-2 bg-gray-400 p-2 rounded-md">
+
+                    {product.colors && product.colors.map((color, i) => (
+                      <div
+                        key={i}
+                        className={`w-8 h-8 rounded-full`}
+                        style={{ backgroundColor: color.hex }}
+                        title={color.name} // Add a title attribute to show color name on hover
+                      ></div>
+                    ))}
+                  </div>
+
                   {/* Enquiry Button */}
                   <a
                     href="https://wa.me/+918130405294" // Replace with your WhatsApp number
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2"
+                    className="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2 mt-4"
                   >
                     <span>Enquiry Now</span>
                   </a>

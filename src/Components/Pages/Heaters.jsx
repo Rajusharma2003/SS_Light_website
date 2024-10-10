@@ -18,16 +18,13 @@ import { Carousel } from 'react-responsive-carousel';
 // This is the data
 const productData = [
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Room heater',
+    // description: 'MODEL NO : SK1100 ',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Durable design',
+      'Energy-saving mode',
+      '400/800 Wattage',
+      'Overheat protection',
     ],
     carouselImages: [
       Heater1,
@@ -35,80 +32,65 @@ const productData = [
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Room heater',
+    // description: 'MODEL NO : SK1100 ',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Durable design',
+      'Energy-saving mode',
+      '400/800 Wattage',
+      'Overheat protection',
     ],
     carouselImages: [
       Heater2
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Room heater',
+    // description: 'MODEL NO : SK1100 ',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+      'Durable design',
+      'Energy-saving mode',
+      '400/800 Wattage',
+      'Overheat protection',
     ],
     carouselImages: [
       Heater3
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Room heater',
+    // description: 'MODEL NO : SK1100 ',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+    'Durable design',
+      'Energy-saving mode',
+      '400/800 Wattage',
+      'Overheat protection',
     ],
     carouselImages: [
       Heater4
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Room heater',
+    // description: 'MODEL NO : SK1100 ',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+     'Durable design',
+      'Energy-saving mode',
+      '400/800 Wattage',
+      'Overheat protection',
     ],
     carouselImages: [
       Heater5
     ]
   },
   {
-    title: 'INFRARED COOKTOP',
-    description: 'MODEL NO : SK1100 ',
+    title: 'Room heater',
+    // description: 'MODEL NO : SK1100 ',
     features: [
-      '3 preset menu',
-      'Adjustable power mode',
-      'Feather touch Control dial',
-      'Infrared heating coil',
-      'Made of high quality ceramic',
-      'Stainless-steel frame that\'s easy to clean',
-      'Suitable for all kinds of utensils'
+     'Durable design',
+      'Energy-saving mode',
+      '400/800 Wattage',
+      'Overheat protection',
     ],
     carouselImages: [
       Heater6

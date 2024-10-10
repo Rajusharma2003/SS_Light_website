@@ -107,7 +107,7 @@ const HotPicSectionDetails = () => {
   };
 
   return (
-    <div className="relative px-4 lg:px-8  mx-auto ml-5 mr-5 ">
+    <div className="relative px-4 lg:px-8  mx-auto ">
       <div className="flex items-center justify-center relative">
         <AliceCarousel
           ref={carouselRef}
@@ -117,7 +117,7 @@ const HotPicSectionDetails = () => {
           infinite={true}     
           disableButtonsControls
           autoPlay
-          animationDuration={2000}
+          animationDuration={1000}
         />
 
         <div className="absolute inset-y-0 left-0 flex items-center">

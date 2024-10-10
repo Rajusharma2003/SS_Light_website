@@ -58,7 +58,7 @@ const Footer = () => {
       </div>
 
       {/* Calling Icon */}
-      <div className="fixed bottom-8 left-10 flex items-center">
+  <div className="fixed bottom-8 left-10 flex items-center">
   <a
     href="tel:+919335035215"
     className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-transform duration-300"
@@ -74,25 +74,25 @@ const Footer = () => {
 </div>
 
 
-      {/* WhatsApp Icon */}
-      <div className="fixed bottom-24 right-10 flex flex-col items-center">
-        <a
-          href="https://wa.me/8178196053"
-          className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-transform duration-300"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaWhatsapp className="text-3xl" />
-        </a>
-      </div>
+  {/* WhatsApp Icon */}
+  <div className="fixed bottom-24 right-10 flex flex-col items-center">
+    <a
+      href="https://wa.me/8178196053"
+      className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-transform duration-300"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaWhatsapp className="text-3xl" />
+    </a>
+  </div>
 
-      {/* Scroll to Top Button */}
-      <button
-        onClick={handleScrollToTop}
-        className="fixed bottom-8 right-10 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600"
-      >
-        <FaArrowUp className="text-2xl" />
-      </button>
+  {/* Scroll to Top Button */}
+  <button
+    onClick={handleScrollToTop}
+    className="fixed bottom-8 right-10 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600"
+  >
+    <FaArrowUp className="text-2xl" />
+  </button>
     </footer>
   );
 };
