@@ -140,7 +140,7 @@ const Farata = () => {
                         <img
                           src={imgSrc}
                           alt={`Slide ${i + 1}`}
-                          className="w-full h-64 object-contain rounded-t-lg"
+                          className="w-full h-64 object-cover rounded-t-lg"
                         />
                       </div>
                     ))}

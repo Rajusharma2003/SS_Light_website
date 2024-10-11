@@ -1,17 +1,20 @@
+/* eslint-disable no-unused-vars */
 import React, { useRef } from 'react'
 import Footer from "./Footer";
 import HotPicSectionDetails from "../../HomePage/HotPicSectionDetails/HotPicSectionDetails";
 import { FaLightbulb } from "react-icons/fa";
 
 // import image here
-import Heater1 from '../../Images/heater1.jpeg'
-import Heater2 from '../../Images/heater2.png'
-import Heater3 from '../../Images/heater3.png'
-import Heater4 from '../../Images/heater4.png'
-import Heater5 from '../../Images/heater5.png'
-import Heater6 from '../../Images/heater6.png'
-import HeaterBanner from '../../Images/HeaterBanner.jpg'
-import banner2 from '../../Images/mainBanner2.jpeg'
+import Heater1 from '../../Images/heater1.png';
+import Heater2 from '../../Images/heater2.png';
+import Heater3 from '../../Images/heater3.png';
+import Heater4 from '../../Images/heater4.png';
+import Heater5 from '../../Images/heater5.png';
+import Heater6 from '../../Images/heater6.png';
+import Heater7 from '../../Images/heater7.png';
+import Heater8 from '../../Images/heater8.png';
+import HeaterBanner from '../../Images/HeaterBanner.jpg';
+import banner2 from '../../Images/mainBanner2.jpeg';
 import { Carousel } from 'react-responsive-carousel';
 
 
@@ -94,6 +97,32 @@ const productData = [
     ],
     carouselImages: [
       Heater6
+    ]
+  },
+  {
+    title: 'Room heater',
+    // description: 'MODEL NO : SK1100 ',
+    features: [
+     'Durable design',
+      'Energy-saving mode',
+      '400/800 Wattage',
+      'Overheat protection',
+    ],
+    carouselImages: [
+      Heater7
+    ]
+  },
+  {
+    title: 'Room heater',
+    // description: 'MODEL NO : SK1100 ',
+    features: [
+     'Durable design',
+      'Energy-saving mode',
+      '400/800 Wattage',
+      'Overheat protection',
+    ],
+    carouselImages: [
+      Heater8
     ]
   },
   
