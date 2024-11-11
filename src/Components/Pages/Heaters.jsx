@@ -13,8 +13,10 @@ import Heater5 from '../../Images/heater5.png';
 import Heater6 from '../../Images/heater6.png';
 import Heater7 from '../../Images/heater7.png';
 import Heater8 from '../../Images/heater8.png';
+import Heater9 from '../../Images/heater9.png';
+import Heater10 from '../../Images/heater10.png';
 import HeaterBanner from '../../Images/HeaterBanner.jpg';
-import banner2 from '../../Images/mainBanner2.jpeg';
+import banner2 from '../../Images/mainBanner2.jpg';
 import { Carousel } from 'react-responsive-carousel';
 
 
@@ -30,7 +32,7 @@ const productData = [
       'Overheat protection',
     ],
     carouselImages: [
-      Heater1,
+      Heater4,
 
     ]
   },
@@ -44,7 +46,7 @@ const productData = [
       'Overheat protection',
     ],
     carouselImages: [
-      Heater2
+      Heater6
     ]
   },
   {
@@ -70,7 +72,7 @@ const productData = [
       'Overheat protection',
     ],
     carouselImages: [
-      Heater4
+      Heater7
     ]
   },
   {
@@ -96,7 +98,7 @@ const productData = [
       'Overheat protection',
     ],
     carouselImages: [
-      Heater6
+      Heater10
     ]
   },
   {
@@ -109,7 +111,7 @@ const productData = [
       'Overheat protection',
     ],
     carouselImages: [
-      Heater7
+      Heater9
     ]
   },
   {
@@ -123,6 +125,32 @@ const productData = [
     ],
     carouselImages: [
       Heater8
+    ]
+  },
+  {
+    title: 'Room heater',
+    // description: 'MODEL NO : SK1100 ',
+    features: [
+     'Durable design',
+      'Energy-saving mode',
+      '400/800 Wattage',
+      'Overheat protection',
+    ],
+    carouselImages: [
+      Heater2
+    ]
+  },
+  {
+    title: 'Room heater',
+    // description: 'MODEL NO : SK1100 ',
+    features: [
+     'Durable design',
+      'Energy-saving mode',
+      '400/800 Wattage',
+      'Overheat protection',
+    ],
+    carouselImages: [
+      Heater1
     ]
   },
   
@@ -211,7 +239,7 @@ const Heaters = () => {
                         <img
                           src={imgSrc}
                           alt={`Slide ${i + 1}`}
-                          className="w-full h-64 object-cover rounded-t-lg"
+                          className="w-full h-64 object-contain rounded-t-lg"
                         />
                       </div>
                     ))}

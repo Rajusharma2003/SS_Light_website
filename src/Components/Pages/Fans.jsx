@@ -25,7 +25,7 @@ import Fan12 from '../../Images/Fan12.png'
 import Fan13 from '../../Images/Fan13.png'
 import Fan14 from '../../Images/Fan14.png'
 import FanBanner from '../../Images/fanImageBanner.jpg'
-import banner2 from '../../Images/mainBanner2.jpeg'
+import banner2 from '../../Images/mainBanner2.jpg'
 
 
 
@@ -261,8 +261,8 @@ import banner2 from '../../Images/mainBanner2.jpeg'
 const Fans = () => {
 
   const sectionsRef = useRef({});
+
   return (
-    
     <>
       {/* This is main image  */}
       <div className="w-full h-full">
@@ -336,14 +336,14 @@ const Fans = () => {
                         <img
                           src={imgSrc}
                           alt={`Slide ${i + 1}`}
-                          className="w-full h-64 object-cover rounded-t-lg"
+                          className="w-full h-64 object-contain rounded-t-lg"
                         />
                       </div>
                     ))}
                   </Carousel>
 
                   <h1 className="text-xl font-semibold">{product.title}</h1>
-                  <p className="text-gray-700">{product.description}</p>
+                  {/* <p className="text-gray-700">{product.description}</p> */}
 
                   {/* Features Section */}
                   <h3 className="text-lg font-medium mt-4">Features</h3>
@@ -355,17 +355,19 @@ const Fans = () => {
 
                   {/* Available Colors Section */}
                   <h3 className="text-lg font-medium mt-4">Available Colors</h3>
-                  <div className="flex space-x-4 mt-2 bg-gray-400 p-2 rounded-md">
+                    <div className="flex space-x-4 mt-2 bg-gray-400 p-2 rounded-md">
+                      {product.colors && product.colors.map((color, i) => (
+                        <div key={i} className="flex flex-col items-center">
+                          <div
+                            className="w-8 h-8 rounded-full"
+                            style={{ backgroundColor: color.hex }}
+                            title={color.name} // Show color name on hover
+                          ></div>
+                          <p className="text-xs mt-1">{color.name}</p> {/* Display color name in a <p> tag */}
+                        </div>
+                      ))}
+                    </div>
 
-                    {product.colors && product.colors.map((color, i) => (
-                      <div
-                        key={i}
-                        className={`w-8 h-8 rounded-full`}
-                        style={{ backgroundColor: color.hex }}
-                        title={color.name} // Add a title attribute to show color name on hover
-                      ></div>
-                    ))}
-                  </div>
 
                   {/* Enquiry Button */}
                   <a
@@ -431,7 +433,6 @@ const Fans = () => {
       </section>
 
       {/* This is the footer section  */}
-
       <div>
         <Footer />
       </div>

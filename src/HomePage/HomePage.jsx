@@ -13,11 +13,16 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 // import image.
-import FanBanner from '../Images/fanImageBanner.jpg'
-import TableBanner from '../Images/TableFanBanner.jpg'
-import FarataBanner from '../Images/farataBanner.jpg'
-import HeaterBanner from '../Images/HeaterBanner.jpg'
-import AboutImage from '../Images/aboutSection.jpg'
+import FanBanner from '../Images/fanImageBanner.jpg';
+import TableBanner from '../Images/TableFanBanner.jpg';
+import FarataBanner from '../Images/farataBanner.jpg';
+import HeaterBanner from '../Images/HeaterBanner.jpg';
+import AboutImage from '../Images/aboutSection.jpg';
+import year10 from '../Images/10years.jpg';
+import OsFanimg from '../Images/cFan.png';
+import Ostablefan from '../Images/osTFan.png';
+import Osfatata from '../Images/osfaratas.png';
+import Osheater from '../Images/osHeater.png';
 
 
 const HomePage = () => {
@@ -28,7 +33,6 @@ const HomePage = () => {
 
 
   return (
-
     <>
     {/* This is carousel section  */}
       <HomeCarousel/>
@@ -41,7 +45,7 @@ const HomePage = () => {
     <Link to="/heaters" className="flex flex-col items-center">
       <div className="transition-transform transform hover:scale-110 duration-300 ease-in-out">
         <img
-          src="https://img.freepik.com/premium-photo/portable-heating-innovation_960080-25371.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
+          src={Osheater}
           alt="Heater"
           className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-full shadow-lg object-cover"
         />
@@ -51,7 +55,7 @@ const HomePage = () => {
     <Link to="/fans" className="flex flex-col items-center">
       <div className="transition-transform transform hover:scale-110 duration-300 ease-in-out">
         <img
-          src="https://img.freepik.com/premium-photo/living-room-with-couch-table-ceiling-fan_966002-68576.jpg?size=626&ext=jpg&ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
+          src={OsFanimg}
           alt="Fan"
           className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-full shadow-lg object-cover"
         />
@@ -61,7 +65,7 @@ const HomePage = () => {
     <Link to="/farata" className="flex flex-col items-center">
       <div className="transition-transform transform hover:scale-110 duration-300 ease-in-out">
         <img
-          src="https://img.freepik.com/premium-photo/black-electric-fan-three-dimensional-model-white-surface-fan-with-control-buttons-stand-simple-device-air-ventilation_101266-1430.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
+          src={Osfatata}
           alt="Farata"
           className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-full shadow-lg object-cover"
         />
@@ -71,7 +75,7 @@ const HomePage = () => {
     <Link to="/tablefans" className="flex flex-col items-center">
       <div className="transition-transform transform hover:scale-110 duration-300 ease-in-out">
         <img
-          src="https://img.freepik.com/premium-photo/table-fan-closeup-cooling-room-hot-weather_76255-1976.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
+          src={Ostablefan}
           alt="Table Fan"
           className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-full shadow-lg object-fill"
         />
@@ -193,7 +197,7 @@ const HomePage = () => {
       <div className='mt-20 bg-gray-100 py-16 relative'>
       <h1 className='text-center font-bold text-3xl mb-32 flex items-center justify-center relative'>
         <FaLightbulb className='text-yellow-500 text-4xl mr-3 glow-effect' />
-        MORE FEATURES
+        Featured Fans
         {/* Underline effect */}
         <span className='absolute top-11 left-1/2 transform -translate-x-1/2 w-[20%] border-b-2 border-black'></span>
       </h1>
@@ -209,11 +213,11 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto flex flex-wrap lg:flex-nowrap justify-center gap-8">
           <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4 transition-transform transform hover:scale-110 duration-300 ease-in-out" >
             <img
-              src="https://img.freepik.com/premium-vector/65-years-services_926377-208.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
+              src={year10}
               alt="Expertise"
               className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 mb-4 rounded-full object-cover"
             />
-            <h2 className="text-base sm:text-lg md:text-xl font-bold">Expertise of 65+ years</h2>
+            <h2 className="text-base sm:text-lg md:text-xl font-bold">Expertise of 10 years</h2>
           </div>
           <div className="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4 transition-transform transform hover:scale-110 duration-300 ease-in-out">
             <img
@@ -237,7 +241,7 @@ const HomePage = () => {
               alt="Happy Customers"
               className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 mb-4 rounded-full object-cover"
             />
-            <h2 className="text-base sm:text-lg md:text-xl font-bold">20+ Crore Happy Customers</h2>
+            <h2 className="text-base sm:text-lg md:text-xl font-bold">Happy Customers</h2>
           </div>
         </div>
 </section>

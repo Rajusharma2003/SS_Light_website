@@ -5,7 +5,7 @@ import { FaChartPie, FaBuilding, FaGlobe, FaTruck, FaStore } from 'react-icons/f
 import Footer from './Footer';
 
 // import image.
-import banner2 from '../../Images/mainBanner2.jpeg'
+import banner2 from '../../Images/mainBanner2.jpg'
 
 
 const AboutPage = () => {
@@ -14,30 +14,30 @@ const AboutPage = () => {
   // data
 
   const data = [
-    {
-      icon: <FaChartPie className="text-4xl text-blue-500" />,
-      label: 'Market Share & Growing',
-      value: 24,
-    },
+    // {
+    //   icon: <FaChartPie className="text-4xl text-blue-500" />,
+    //   label: 'Market Share & Growing',
+    //   // value: 24,
+    // },
     {
       icon: <FaBuilding className="text-4xl text-green-500" />,
-      label: 'Manufacturing Facilities',
-      value: 25,
+      label: 'Manufacturing',
+      // value: 25,
     },
     {
       icon: <FaGlobe className="text-4xl text-orange-500" />,
       label: 'states we export our products',
-      value: 70,
+      // value: 70,
     },
     {
       icon: <FaTruck className="text-4xl text-purple-500" />,
       label: 'Authorised Distributors and expanding',
-      value: 4300,
+      // value: 4300,
     },
     {
       icon: <FaStore className="text-4xl text-red-500" />,
-      label: 'Retailers connecting us to consumers',
-      value: 205000,
+      label: 'Connected with Distributors',
+      // value: 205000,
     },
   ];
 
@@ -82,7 +82,7 @@ const AboutPage = () => {
             <div key={index} className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md max-w-xs">
               <div className="mb-4">{item.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{item.label}</h3>
-              <CountUp start={0} end={item.value} duration={3} separator="," className="text-3xl font-bold text-gray-800" />
+              {/* <CountUp start={0} end={item.value} duration={3} separator="," className="text-3xl font-bold text-gray-800" /> */}
             </div>
           ))}
         </div>

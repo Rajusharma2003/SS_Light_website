@@ -36,8 +36,6 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">Contact Us</h3>
           <p className="mb-4">For any issues related to any products give us a call or connect with us here</p>
-          <p className="mb-2">Call: <a href="tel:18004190505" className="hover:underline">+91 81781 96053</a></p>
-          <p className="mb-4">Chat: <a href="https://wa.me/8178196053" className="hover:underline">WhatsApp no : +91 81781 96053</a></p>
           {/* <p className="mb-4">Address: A 108, DSIIDC Industrial Area, Sector 4, Bawana, Delhi, 110039 </p> */}
           <h3 className="text-lg font-bold mb-4">Sign up for SS_Light updates</h3>
           <p className="mb-2">Subscribe to our newsletter for the latest updates, products, and insights</p>
@@ -57,7 +55,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Calling Icon */}
+      {/* Calling Icon
   <div className="fixed bottom-8 left-10 flex items-center">
   <a
     href="tel:+919335035215"
@@ -71,7 +69,7 @@ const Footer = () => {
       className="w-8 h-8"
     />
   </a>
-</div>
+</div> */}
 
 
   {/* WhatsApp Icon */}

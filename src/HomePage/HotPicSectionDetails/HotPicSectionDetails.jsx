@@ -20,58 +20,69 @@ import TableFan3 from '../../Images/Fan3.png'
 const carouselData = [
     {
         image: Fan1,
-        description: 'SS Light Dalmia Fans',
-        rate: "2000"
+        description: 'SS Light Fans',
+        rate: "2000",
+        model : 'crown dlx Ceiling Fan'
     },
     {
         image: Fan2 ,
-        description: 'SS Light Dalmia Fans',
-        rate: "2000"
+        description: 'SS Light Fans',
+        rate: "2000",
+        model : 'Room Heater'
     },
     {
         image: Fan3,
-        description: 'SS Light Dalmia Fans',
-        rate: "2000"
+        description: 'SS Light Fans',
+        rate: "2000",
+        model : 'Aartic-1 AP Fan'
     },
     {
         image: Fan4,
-        description: 'SS Light Dalmia Fans',
-        rate: "2000"
+        description: 'SS Light Fans',
+        rate: "2000",
+        model : 'Roto Grill'
     },
     {
         image: Fan5,
-        description: 'SS Light Dalmia Fans',
-        rate: "2000"
+        description: 'SS Light Fans',
+        rate: "2000",
+        model : 'Venti Fan'
     },
     {
         image: Fan6,
-        description: 'SS Light Dalmia Fans',
-        rate: "2000"
+        description: 'SS Light Fans',
+        rate: "2000",
+        model : 'Airy Fresh'
     },
     {
         image: TableFan5,
-        description: 'SS Light Dalmia Fans',
-        rate: "2000"
+        description: 'SS Light Fans',
+        rate: "2000",
+        model : 'Chill Air Table Fan'
     },
     {
         image: TableFan6,
-        description: 'SS Light Dalmia Fans',
-        rate: "2000"
+        description: 'SS Light Fans',
+        rate: "2000",
+        model : 'Strom AP Fan'
     },
     {
         image: TableFan3,
-        description: 'SS Light Dalmia Fans',
-        rate: "2000"
+        description: 'SS Light Fans',
+        rate: "2000",
+        model : 'Senorita Ceiling Fan'
     },
     {
         image: TableFan8,
-        description: 'SS Light Dalmia Fans',
-        rate: "2000"
+        description: 'SS Light Fans',
+        rate: "2000",
+        model : 'Jaguar Ceiling Fan'
     },
     {
         image: TableFan7,
-        description: 'SS Light Dalmia Fans',
-        rate: "2000"
+        description: 'SS Light Fans',
+        rate: "2000",
+        model : 'Jaguar Ceiling Fan'
     },
 ];
 
@@ -88,7 +99,8 @@ const HotPicSectionDetails = () => {
   const items = carouselData.map((data, index) => (
     <HotpicSectionCard 
       key={index} 
-      image={data.image}  
+      image={data.image}
+      model={data.model}
       description={data.description} 
       // rate={data.rate}  
     />
@@ -117,7 +129,7 @@ const HotPicSectionDetails = () => {
           infinite={true}     
           disableButtonsControls
           autoPlay
-          animationDuration={1000}
+          animationDuration={800}
         />
 
         <div className="absolute inset-y-0 left-0 flex items-center">

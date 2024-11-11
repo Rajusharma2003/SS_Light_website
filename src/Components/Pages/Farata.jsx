@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useRef } from 'react'
 import Footer from "./Footer";
 import HotPicSectionDetails from "../../HomePage/HotPicSectionDetails/HotPicSectionDetails";
@@ -8,7 +9,7 @@ import farata1 from '../../Images/Farata1.png'
 import farata2 from '../../Images/farata2.png'
 import farata3 from '../../Images/farata3.png'
 import farata4 from '../../Images/farata4.png'
-import banner2 from '../../Images/mainBanner2.jpeg'
+import banner2 from '../../Images/mainBanner2.jpg'
 import FarataBanner from '../../Images/farataBanner.jpg'
 import { Carousel } from 'react-responsive-carousel';
 
@@ -67,7 +68,6 @@ const Farata = () => {
   return (
 
     <>
-    
     {/* This is main image section */}
        <div>
         <img
@@ -140,7 +140,7 @@ const Farata = () => {
                         <img
                           src={imgSrc}
                           alt={`Slide ${i + 1}`}
-                          className="w-full h-64 object-cover rounded-t-lg"
+                          className="w-full h-64 object-contain rounded-t-lg"
                         />
                       </div>
                     ))}
@@ -159,7 +159,7 @@ const Farata = () => {
 
                   {/* Enquiry Button */}
                   <a
-                    href="https://wa.me/+918178196053" // Replace with your WhatsApp number
+                    href="https://wa.me/+918178196053" // Replace with your WhatsApp number.
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2"

@@ -5,15 +5,17 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 // import images.
-import banner1 from '../Images/mainBanner1.jpeg'
-import banner2 from '../Images/mainBanner2.jpeg'
+import banner1 from '../Images/mainBanner1.jpg'
+import banner2 from '../Images/mainBanner2.jpg'
+
+
 
 const carouselData = [
     {
-        image: banner1
+        image: banner2
     },
     {
-        image: banner2
+        image: banner1
     },
    
 ];

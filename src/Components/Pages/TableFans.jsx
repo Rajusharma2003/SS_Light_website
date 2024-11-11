@@ -13,7 +13,7 @@ import TableFan6 from "../../Images/TableFan6.png"
 import TableFan7 from "../../Images/TableFan7.png"
 import TableFan8 from "../../Images/TableFan8.png"
 import TableBanner from '../../Images/TableFanBanner.jpg'
-import banner2 from '../../Images/mainBanner2.jpeg'
+import banner2 from '../../Images/mainBanner2.jpg'
 import { Carousel } from 'react-responsive-carousel';
 
 
@@ -189,7 +189,7 @@ const TableFans = () => {
                         <img
                           src={imgSrc}
                           alt={`Slide ${i + 1}`}
-                          className="w-full h-64 object-cover rounded-t-lg"
+                          className="w-full h-64 object-contain rounded-t-lg"
                         />
                       </div>
                     ))}
