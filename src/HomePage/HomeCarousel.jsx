@@ -20,6 +20,7 @@ const carouselData = [
    
 ];
 
+// This is the carousel component for the home page.
 const HomeCarousel = () => (
   <div className="relative ">
     <AliceCarousel 
